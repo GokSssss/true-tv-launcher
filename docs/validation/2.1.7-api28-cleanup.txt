@@ -1,0 +1,9 @@
+cmd package set-home-activity com.android.launcher3/.Launcher -> 0 Success
+cmd package resolve-activity --brief -a android.intent.action.MAIN -c android.intent.category.HOME -> 0 priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=true
+com.android.launcher3/.Launcher
+settings --user 0 get secure enabled_accessibility_services -> 0 
+settings --user 0 get secure accessibility_enabled -> 0 0
+pm list packages -d com.android.dreams.basic -> 0 
+id -u -> 0 2000
+Disposable API28 VM stopped; no owner device tested.
+QEMU stopped; disposable writable images removed: userdata-qemu.img, userdata-qemu.img.qcow2, cache.img, cache.img.qcow2, encryptionkey.img.qcow2

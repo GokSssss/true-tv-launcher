@@ -1,0 +1,47 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+ <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+ <uses-permission android:name="android.permission.WAKE_LOCK"/>
+ <uses-permission android:name="android.permission.INTERNET" />
+ <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+ <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE" />
+ <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+ <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+ <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+ <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+ <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="29" />
+ <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="29" />
+ <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
+ <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+ <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+ <uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30" />
+ <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+ <uses-feature android:name="android.software.leanback" android:required="false" />
+ <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+ <application android:label="@string/app_name" android:theme="@style/BlackTheme" android:icon="@drawable/launcher_icon" android:banner="@drawable/launcher_banner" android:requestLegacyExternalStorage="true" android:allowBackup="false" android:supportsRtl="true">
+  <activity android:name="ru.truetv.launcher.HomeActivity" android:exported="true" android:launchMode="singleTask">
+   <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.HOME"/><category android:name="android.intent.category.DEFAULT"/></intent-filter>
+
+  </activity>
+  <activity android:name="ru.truetv.launcher.LauncherEntry" android:exported="true" android:theme="@android:style/Theme.NoDisplay" android:noHistory="true" android:excludeFromRecents="true">
+   <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/><category android:name="android.intent.category.LEANBACK_LAUNCHER"/></intent-filter>
+  </activity>
+  <provider android:name="ru.truetv.launcher.LauncherDocuments" android:authorities="ru.truetv.launcher.documents" android:exported="true" android:grantUriPermissions="true" android:permission="android.permission.MANAGE_DOCUMENTS"><intent-filter><action android:name="android.content.action.DOCUMENTS_PROVIDER" /></intent-filter></provider>
+  <activity android:name="ru.truetv.launcher.FileActivity" android:label="@string/file_manager_name" android:exported="true" android:windowSoftInputMode="stateAlwaysHidden">
+   <intent-filter><action android:name="android.intent.action.OPEN_DOCUMENT"/><action android:name="android.intent.action.CREATE_DOCUMENT"/><action android:name="android.intent.action.GET_CONTENT"/><action android:name="android.intent.action.PICK"/><action android:name="org.openintents.action.PICK_FILE"/><category android:name="android.intent.category.DEFAULT"/><category android:name="android.intent.category.OPENABLE"/><data android:mimeType="*/*"/></intent-filter>
+   <intent-filter><action android:name="android.intent.action.OPEN_DOCUMENT_TREE"/><action android:name="org.openintents.action.PICK_DIRECTORY"/><category android:name="android.intent.category.DEFAULT"/></intent-filter>
+  </activity>
+  <activity android:name="ru.truetv.launcher.CatalogActivity" android:exported="false" android:windowSoftInputMode="stateAlwaysHidden" />
+  <activity android:name="ru.truetv.launcher.SettingsActivity" android:exported="false" />
+  <activity android:name="ru.truetv.launcher.BluetoothScreens" android:exported="false" android:windowSoftInputMode="stateAlwaysHidden" />
+  <activity android:name="ru.truetv.launcher.AccessActivity" android:exported="false" />
+  <activity android:name="ru.truetv.launcher.ExpertActivity" android:exported="false" />
+  <activity android:name="ru.truetv.launcher.IrRemoteActivity" android:exported="false" android:windowSoftInputMode="stateAlwaysHidden" />
+  <activity android:name="ru.truetv.launcher.ShareSettingsActivity" android:exported="false" android:theme="@android:style/Theme.Material.Dialog.Alert" android:excludeFromRecents="true" />
+  <activity android:name="ru.truetv.bridge.android.SendActivity" android:exported="false" android:theme="@android:style/Theme.Material.Dialog.Alert" />
+  <service android:name="ru.truetv.bridge.android.SendService" android:exported="false" android:foregroundServiceType="connectedDevice" />
+  <service android:name="ru.truetv.launcher.ControlService" android:label="@string/control_name" android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" android:exported="true">
+   <intent-filter><action android:name="android.accessibilityservice.AccessibilityService"/></intent-filter>
+   <meta-data android:name="android.accessibilityservice" android:resource="@xml/control_service" />
+  </service>
+ </application>
+</manifest>

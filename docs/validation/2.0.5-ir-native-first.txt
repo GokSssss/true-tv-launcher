@@ -1,0 +1,25 @@
+INSTRUMENTATION_RESULT: report=PASS disposable export path starts empty
+PASS expert settings contain IR entry
+PASS opening screen never starts root
+PASS draft survives activity launch
+PASS report labels unapplied draft
+PASS unsupported apply is explained
+PASS receiver button takes remote focus
+ERROR java.lang.SecurityException: Injecting to another application requires INJECT_EVENTS permission
+	at android.os.Parcel.createException(Parcel.java:1942)
+	at android.os.Parcel.readException(Parcel.java:1910)
+	at android.os.Parcel.readException(Parcel.java:1860)
+	at android.hardware.input.IInputManager$Stub$Proxy.injectInputEvent(IInputManager.java:575)
+	at android.hardware.input.InputManager.injectInputEvent(InputManager.java:880)
+	at android.app.Instrumentation.sendKeySync(Instrumentation.java:1038)
+	at android.app.Instrumentation.sendKeyDownUpSync(Instrumentation.java:1048)
+	at ru.truetv.launcher.IrUiCheck.onStart(IrUiCheck.java:25)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2145)
+Caused by: android.os.RemoteException: Remote stack trace:
+	at com.android.server.input.InputManagerService.injectInputEventInternal(InputManagerService.java:621)
+	at com.android.server.input.InputManagerService.injectInputEvent(InputManagerService.java:595)
+	at android.hardware.input.IInputManager$Stub.onTransact(IInputManager.java:143)
+	at android.os.Binder.execTransact(Binder.java:731)
+
+
+INSTRUMENTATION_CODE: 0

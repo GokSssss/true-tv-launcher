@@ -1,0 +1,18 @@
+{
+  "emulator-5554": [
+    "getprop ro.build.version.sdk\n28\n",
+    "getprop sys.boot_completed\n1\n",
+    "settings get secure enabled_accessibility_services\nnull\n",
+    "settings get secure accessibility_enabled\n0\n",
+    "settings get global always_finish_activities\nnull\n",
+    "cmd package resolve-activity --brief --user 0 -a android.intent.action.MAIN -c android.intent.category.HOME\npriority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=true\ncom.android.launcher3/.Launcher\n"
+  ],
+  "emulator-5556": [
+    "getprop ro.build.version.sdk\n34\n",
+    "getprop sys.boot_completed\n\n",
+    "settings get secure enabled_accessibility_services\ncmd: Can't find service: settings\n",
+    "settings get secure accessibility_enabled\ncmd: Can't find service: settings\n",
+    "settings get global always_finish_activities\ncmd: Can't find service: settings\n",
+    "cmd package resolve-activity --brief --user 0 -a android.intent.action.MAIN -c android.intent.category.HOME\ncmd: Can't find service: package\n"
+  ]
+}

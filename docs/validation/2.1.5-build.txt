@@ -1,0 +1,3 @@
+Pinned tools verified
+Verified v1=true v2=true certSHA256=a5a632bd6a8b8e2c3e3623ee245c3a5c3652c0c6b32751a35a49d6a9c2e8fa33
+/workspace/GPT/30-True-TV-Launcher/artifacts/2.1.5-True-TV-Launcher.apk

@@ -1,0 +1,27 @@
+INSTRUMENTATION_RESULT: passed=false
+INSTRUMENTATION_RESULT: report=PASS disposable VM guard SDK28
+PASS real app ADB connection and same-device proof
+PASS stock Home fixture resolved on this Android version
+PASS fixture service enabled before selection
+PASS own concrete service selectable in UI
+PASS actual Dpad Up from service list selects first EnableADB button, cycle0
+PASS Right reaches second connection button
+PASS Down from connection returns to service list
+PASS actual Dpad Up from service list selects first EnableADB button, cycle1
+PASS Right reaches second connection button
+PASS Down from connection returns to service list
+PASS actual Dpad Up from service list selects first EnableADB button, cycle2
+PASS Right reaches second connection button
+PASS Down from connection returns to service list
+PASS remote focus movement never connects or grants
+PASS selection and opening confirmation do not enable service
+PASS explicit service-enable confirmation clicked
+PASS UI activation confirmed by Android AccessibilityManager
+PASS pre-existing fixture service preserved
+FAIL activation result primary action is OK, not hidden OEM Accessibility menu
+java.lang.AssertionError: activation result primary action is OK, not hidden OEM Accessibility menu
+	at ru.truetv.launcher.RuntimeSetupCheck.check(RuntimeSetupCheck.java:17)
+	at ru.truetv.launcher.RuntimeSetupCheck.onStart(RuntimeSetupCheck.java:46)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2145)
+
+INSTRUMENTATION_CODE: 0

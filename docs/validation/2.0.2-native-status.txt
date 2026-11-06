@@ -1,0 +1,10 @@
+03.11.2026 — True TV Launcher2.0.2, попытки нативного прогона Android14/API34
+Статус: НЕ ПРОЙДЕН из-за нестабильности одноразового эмулятора; не выдавать за PASS приложения.
+Старый AVD: app_process64 не нашёл libnativeloader.so до запуска APK.
+После wipe-data: PackageManagerInternal ещё не инициализирован, StorageManager NPE при преждевременной установке; позже Watchdog перезапустил system_server.
+Одна установка предыдущей2.0.1 прошла. Обновление2.0.2 прервано Broken pipe; системный процесс упал с Lost network stack, Bluetoothbt_stack_manageSIGABRT. Сам новыйAPK не запустился в нативном harness.
+Повтор с4GB/ro.hw_timeout_multiplier10: загрузка не завершилась в отведённое окно180сек, тесты не начались. Дальнейшие повторы прекращены.
+Исправлена диагностика: ключ Watchdog Android14 — system_server_watchdog_timeout_ms; прежний watchdog_timeout_millis не управлял Watchdog. Эти параметры только тестовой среды; в приложении нет их изменения.
+UiCheck/AppearanceCheck/ExpertCheck скомпилированы, но в этом выпуске на работающемAndroid не исполнены. Исторические PASS2.0.1 не переносятся на2.0.2. Реальные ADB-операции, same-device-проверка и root-менеджер остаются неподтверждёнными на устройстве. ФизическийGrundig не подключался.
+РабочийControlService не менялся; прежняя неподтверждённость stop/restart черезA11y сохраняется.
+119hostпроверок:84domain+35команды/RSA/framing/runner — PASS. Сборка/сертификат/namespace/CRC/alignment — PASS.

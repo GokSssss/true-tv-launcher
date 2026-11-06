@@ -1,0 +1,4 @@
+Normal launcher process, no target Instrumentation.
+Actual UI long-press menu -> focused Close app -> DpadCenter.
+Probe PID before=2672 after=2672
+NOT CONFIRMED

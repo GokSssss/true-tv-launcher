@@ -1,0 +1,52 @@
+INSTRUMENTATION_RESULT: passed=true
+INSTRUMENTATION_RESULT: report=PASS guard: disposable emulator only
+PASS own test directory created
+PASS implicit android.intent.action.OPEN_DOCUMENT resolves without DocumentsUI
+PASS picker loaded fixture list
+PASS external client returned result
+PASS external client actually read URI: null
+PASS OPEN_DOCUMENT persists permission
+PASS real seekable file descriptor
+PASS external UTF8 bytes correct
+PASS OpenableColumns display name
+PASS external client returned result
+PASS external client actually read URI: null
+PASS saved grant survives client force-stop/restart
+PASS implicit android.intent.action.GET_CONTENT resolves without DocumentsUI
+PASS picker loaded fixture list
+PASS external client returned result
+PASS external client actually read URI: null
+PASS GET_CONTENT remains temporary
+PASS generic binary request accepts ROM
+PASS implicit android.intent.action.OPEN_DOCUMENT resolves without DocumentsUI
+PASS picker loaded fixture list
+PASS external client returned result
+PASS external client actually read URI: null
+PASS multiple selection returns ClipData with two readable files
+PASS implicit android.intent.action.OPEN_DOCUMENT_TREE resolves without DocumentsUI
+PASS picker loaded fixture list
+PASS external client returned result
+PASS external client actually read URI: null
+PASS TREE URI enumerates real children
+PASS tree grant cannot read sibling document
+PASS implicit android.intent.action.CREATE_DOCUMENT resolves without DocumentsUI
+PASS picker loaded fixture list
+PASS external client returned result
+PASS external client actually read URI: null
+PASS CREATE_DOCUMENT writes through external client
+PASS created content stored in target folder
+PASS document URI identity survives rename
+PASS picker loaded fixture list
+PASS folder tree left and files right
+PASS no file actions under list
+PASS Dpad reaches per-file menu
+PASS Dpad reaches checkbox
+PASS external client returned result
+PASS external client actually read URI: null
+PASS open-with association grants read but not write
+PASS short OK cannot start override
+PASS three-second continuous hold starts exactly once
+PASS About row always displays actual version
+PASS Wi-Fi is only a deferred placeholder
+Checks=49
+INSTRUMENTATION_CODE: -1

@@ -1,0 +1,3 @@
+Own runtime classes: 319
+PASS package, version, resource alignment, no external font/native libraries, no legacy runtime classes
+APK SHA256 b9c07a6b7e16fa4988baeb15657ffd8aff724ffde542ba9e756a69c9babbeeed

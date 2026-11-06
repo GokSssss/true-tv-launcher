@@ -1,0 +1,25 @@
+INSTRUMENTATION_RESULT: passed=false
+INSTRUMENTATION_RESULT: report=PASS disposable VM guard
+PASS created own fixture
+PASS native folder header preserves real filename
+PASS system language mapping ru
+PASS system picker resource language ru
+PASS system language mapping en
+PASS system picker resource language en
+PASS system language mapping de
+PASS system picker resource language de
+PASS two full-height vertical column separators
+PASS folder action has matching vector icon 0
+PASS folder action has matching vector icon 1
+PASS folder action has matching vector icon 2
+PASS folder action has matching vector icon 3
+PASS folder action has matching vector icon 4
+PASS folder action has matching vector icon 5
+FAIL own edit dialog for Новая папка
+java.lang.AssertionError: own edit dialog for Новая папка
+	at ru.truetv.launcher.FileVisualCheck.check(FileVisualCheck.java:17)
+	at ru.truetv.launcher.FileVisualCheck.create(FileVisualCheck.java:25)
+	at ru.truetv.launcher.FileVisualCheck.onStart(FileVisualCheck.java:32)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2145)
+
+INSTRUMENTATION_CODE: 0

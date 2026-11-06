@@ -1,0 +1,17 @@
+INSTRUMENTATION_RESULT: report=PASS disposable export path starts empty
+PASS expert settings contain IR entry
+PASS opening screen never starts root
+PASS draft survives activity launch
+PASS report labels unapplied draft
+PASS unsupported apply is explained
+PASS receiver button takes remote focus
+PASS Dpad moves to codes button
+PASS learned code requires explicit confirmation
+PASS confirmed code saved only in app preferences
+PASS report provides copy and TXT export plus Cancel
+PASS report file saved without SAF picker
+PASS export contains draft and its actual status
+PASS single code can be removed
+PASS IR activity not exported
+Checks=15; no root/hardware claim
+INSTRUMENTATION_CODE: -1

@@ -1,0 +1,30 @@
+INSTRUMENTATION_RESULT: report=PASS default 5x3 board
+PASS fixed header controls/status/date-clock
+PASS desktop fills screen width independently of rows
+PASS Cancel is final semantic row
+PASS grey item remains focusable and clickable
+PASS initial focus on first row after layout
+PASS first to Cancel Dpad wrap
+PASS Cancel to first Dpad wrap
+PASS installed apps in menu
+PASS system apps hidden by default
+PASS system checkbox adds installed packages
+PASS search filters app menu
+PASS three-line label space reserved
+PASS focus keeps icon geometry
+PASS add screen shares same system checkbox
+PASS add shares compact grid geometry
+PASS one running checkbox
+PASS no separate Usage grant entry
+PASS only icon size preference; automatic cells
+PASS modern icon size sheet
+PASS percentage summary renders literally
+PASS restriction wording
+PASS up to seven columns
+PASS up to five rows
+PASS date slash format
+PASS three clock/date styles
+PASS 7x5 maximum board
+PASS shrinking grid preserves stored offscreen slots
+Checks=28
+INSTRUMENTATION_CODE: -1

@@ -1,0 +1,17 @@
+shell settings get secure enabled_accessibility_services
+null
+
+shell settings get secure accessibility_enabled
+0
+
+shell settings get global always_finish_activities
+null
+
+shell cmd package resolve-activity --brief --user 0 -a android.intent.action.MAIN -c android.intent.category.HOME
+priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=true
+com.android.launcher3/.Launcher
+
+shell dumpsys package com.android.launcher3
+Preferred Activities User 0:
+    User 0: ceDataInode=114865 installed=true hidden=false suspended=false stopped=false notLaunched=false enabled=0 instant=false virtual=false
+  User 0:

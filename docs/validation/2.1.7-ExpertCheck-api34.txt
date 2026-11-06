@@ -1,0 +1,20 @@
+INSTRUMENTATION_RESULT: report=PASS guard: disposable VM only
+PASS fixture is a system package
+PASS disposable emulator user0
+PASS Settings protected
+PASS own launcher protected
+PASS noncritical fixture allowed
+PASS real local ADB and same-device proof
+PASS protected mutation rejected before command
+PASS app ADB disables fixture and reads state
+PASS app ADB enables fixture and reads state
+PASS app ADB removes fixture for user only
+PASS app ADB restores factory fixture
+PASS fixture original enabled setting restored
+PASS expert system list loads
+PASS expert theme applied
+PASS expert search and removed toggle
+PASS expert package search
+PASS expert empty search
+Checks=18
+INSTRUMENTATION_CODE: -1

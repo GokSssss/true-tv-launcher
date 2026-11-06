@@ -1,0 +1,32 @@
+INSTRUMENTATION_RESULT: report=PASS guard: disposable emulator only
+PASS own test directory created
+PASS implicit android.intent.action.OPEN_DOCUMENT resolves without DocumentsUI
+PASS picker loaded fixture list
+PASS external client returned result
+PASS external client actually read URI: null
+PASS OPEN_DOCUMENT persists permission
+PASS real seekable file descriptor
+PASS external UTF8 bytes correct
+PASS OpenableColumns display name
+PASS external client returned result
+PASS external client actually read URI: null
+PASS saved grant survives client force-stop/restart
+PASS implicit android.intent.action.GET_CONTENT resolves without DocumentsUI
+PASS picker loaded fixture list
+PASS external client returned result
+PASS external client actually read URI: null
+PASS GET_CONTENT remains temporary
+PASS generic binary request accepts ROM
+PASS implicit android.intent.action.OPEN_DOCUMENT resolves without DocumentsUI
+PASS picker loaded fixture list
+PASS external client returned result
+PASS external client actually read URI: null
+PASS multiple selection returns ClipData with two readable files
+FAIL implicit android.intent.action.OPEN_DOCUMENT_TREE resolves without DocumentsUI
+ERROR java.lang.AssertionError: implicit android.intent.action.OPEN_DOCUMENT_TREE resolves without DocumentsUI
+	at ru.truetv.launcher.FileNativeCheck.check(FileNativeCheck.java:18)
+	at ru.truetv.launcher.FileNativeCheck.startClient(FileNativeCheck.java:27)
+	at ru.truetv.launcher.FileNativeCheck.onStart(FileNativeCheck.java:38)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2145)
+
+INSTRUMENTATION_CODE: 0

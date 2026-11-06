@@ -1,0 +1,2 @@
+PASS 84 domain assertions
+PASS 35 expert command/RSA/ADB framing/root-runner checks

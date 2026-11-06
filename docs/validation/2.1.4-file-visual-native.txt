@@ -1,0 +1,36 @@
+INSTRUMENTATION_RESULT: passed=true
+INSTRUMENTATION_RESULT: report=PASS disposable VM guard
+PASS created own fixture
+PASS native folder header preserves real filename
+PASS system language mapping ru
+PASS system picker resource language ru
+PASS system language mapping en
+PASS system picker resource language en
+PASS system language mapping de
+PASS system picker resource language de
+PASS two full-height vertical column separators
+PASS columns are tree, files, folder actions
+PASS folder content starts with Back
+PASS folder action has matching vector icon 0
+PASS folder action has matching vector icon 1
+PASS folder action has matching vector icon 2
+PASS folder action has matching vector icon 3
+PASS folder action has matching vector icon 4
+PASS folder action has matching vector icon 5
+PASS own edit dialog for Новая папка
+PASS new-folder name is prefilled
+PASS entered new name Новая папка
+PASS confirmed create Новая папка
+PASS created correct object on storage Новая папка
+PASS own edit dialog for Новый текст
+PASS entered new name Новый текст
+PASS confirmed create Новый текст
+PASS created correct object on storage Новый текст.txt
+PASS created TXT has text MIME
+PASS large N/total counter shares folder title row
+PASS folder actions have row separators
+PASS labelled Menu focus captured
+PASS tree frame leaves connector lane clear and titles wrap
+PASS tree column narrowed to free file area
+Checks=33
+INSTRUMENTATION_CODE: -1

@@ -1,0 +1,9 @@
+INSTRUMENTATION_RESULT: passed=false
+INSTRUMENTATION_RESULT: report=PASS disposable VM guard SDK34
+java.io.IOException: Unexpected ADB channel
+	at ru.truetv.launcher.AdbWire.shell(AdbWire.java:19)
+	at ru.truetv.launcher.ExpertBackend.shell(ExpertBackend.java:18)
+	at ru.truetv.launcher.RuntimeSetupCheck.onStart(RuntimeSetupCheck.java:28)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2402)
+
+INSTRUMENTATION_CODE: 0

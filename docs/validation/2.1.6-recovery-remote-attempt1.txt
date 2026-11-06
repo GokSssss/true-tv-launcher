@@ -1,0 +1,7 @@
+Disposable Android9 VM only. Stock216, actual Dpad key injection; no product mutation.
+initial-focus []
+down-focus-0 [{"class": "android.widget.Button", "text": "Close app", "content-desc": "", "package": "android", "bounds": "[368,350][912,398]"}]
+down-focus-1 [{"class": "android.widget.Button", "text": "Wait", "content-desc": "", "package": "android", "bounds": "[368,398][912,446]"}]
+down-focus-2 [{"class": "android.widget.Button", "text": "Wait", "content-desc": "", "package": "android", "bounds": "[368,398][912,446]"}]
+after-plus [{"class": "android.widget.FrameLayout", "text": "", "content-desc": "Applications", "package": "ru.truetv.launcher", "bounds": "[63,46][115,98]"}]
+STOP "plus did not show expected catalog; inspect own VM UI"

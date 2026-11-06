@@ -1,0 +1,22 @@
+PASS 84 domain assertions
+PASS 35 expert command/RSA/ADB framing/root-runner checks
+PASS 18008 desktop geometry and persisted RSA checks (180 grid configurations)
+IR diagnostic host checks: 127 PASS (no hardware/root claim)
+PASS 41 report export checks: collision preservation, UTF8, scoped commit/rollback
+PASS 52 filesystem/MIME/expert path checks
+----------
+1. ERROR in /workspace/GPT/30-True-TV-Launcher/tests/FileVisualCheck.java (at line 34)
+	}catch(Throwable e){StringWriter trace=new StringWriter();e.printStackTrace(new PrintWriter(trace));done.putString("report",output+trace);done.putBoolean("passed",false);}finally{try{if(a!=null)main(a::finish);if(fixture!=null)FileCore.erase(fixture,FileCore.NEVER);FileStore.get(c).purgeMissing();}catch(Exception ignored){}}finish(done.getBoolean("passed")?Activity.RESULT_OK:Activity.RESULT_CANCELED,done);}
+	                                                                                                                            ^^^^^^^^^^^^
+The operator + is undefined for the argument type(s) StringBuilder, StringWriter
+----------
+1 problem (1 error)
+Traceback (most recent call last):
+  File "/workspace/GPT/30-True-TV-Launcher/tests/build.py", line 16, in <module>
+    run('java','-jar',cache/'ecj.jar','-8','-nowarn','-cp',str(cache/'android34.jar')+os.pathsep+str(root/'app/build/portable/classes'),'-d',classes,'tests/UiCheck.java','tests/ControlCheck.java','tests/ExtrasCheck.java','tests/AppearanceCheck.java','tests/ExpertCheck.java','tests/LayoutCheck.java','tests/IrUiCheck.java','tests/FileNativeCheck.java','tests/FileVisualCheck.java')
+  File "/workspace/GPT/30-True-TV-Launcher/tests/build.py", line 4, in run
+    def run(*a):subprocess.run(list(map(str,a)),check=True)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['java', '-jar', '/workspace/GPT/30-True-TV-Launcher/.cache/ecj.jar', '-8', '-nowarn', '-cp', '/workspace/GPT/30-True-TV-Launcher/.cache/android34.jar:/workspace/GPT/30-True-TV-Launcher/app/build/portable/classes', '-d', '/workspace/GPT/30-True-TV-Launcher/tests/build/classes', 'tests/UiCheck.java', 'tests/ControlCheck.java', 'tests/ExtrasCheck.java', 'tests/AppearanceCheck.java', 'tests/ExpertCheck.java', 'tests/LayoutCheck.java', 'tests/IrUiCheck.java', 'tests/FileNativeCheck.java', 'tests/FileVisualCheck.java']' returned non-zero exit status 255.

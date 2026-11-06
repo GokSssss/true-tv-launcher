@@ -1,0 +1,44 @@
+INSTRUMENTATION_RESULT: passed=true
+INSTRUMENTATION_RESULT: report=PASS antenna immediately follows file manager
+PASS desktop antenna opens receive popup directly
+PASS await condition
+PASS await condition
+PASS no file before confirmation
+PASS only Accept/Decline for incoming request
+PASS manual accept writes real TLS payload
+PASS await condition
+PASS public Downloads exact bytes
+PASS result offers Open file / Show in folder
+PASS completed decision cleared
+PASS await condition
+SEND REJECTED
+PASS same device asks again; decline preserves existing file
+PASS await condition
+PASS repeat transfer 0 without restarting popup
+PASS await condition
+PASS collision keeps each completed file
+PASS repeat transfer 1 without restarting popup
+PASS await condition
+PASS collision keeps each completed file
+PASS repeat transfer 2 without restarting popup
+PASS await condition
+PASS collision keeps each completed file
+PASS repeat transfer 3 without restarting popup
+PASS await condition
+PASS collision keeps each completed file
+PASS await condition
+SEND failed to connect to ip6-localhost/::1 (port 46501) from /::1 (port 43554) after 8000ms: isConnected failed: ECONNREFUSED (Connection refused)
+PASS closed popup refuses new connection
+PASS await condition
+PASS await condition
+SEND REJECTED
+PASS closing pending question rejects and closes socket
+PASS closed request never publishes
+PASS await condition
+PASS reopen after close receives empty file
+PASS await condition
+PASS Show in folder opens actual Downloads manager
+PASS Show in folder ends reception
+PASS accessibility unchanged
+Checks=38
+INSTRUMENTATION_CODE: -1

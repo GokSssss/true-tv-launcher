@@ -1,0 +1,3 @@
+INSTRUMENTATION_RESULT: passed=true
+INSTRUMENTATION_RESULT: report=PASS selected probe stopped and relaunched through actual Accessibility Settings workflow
+INSTRUMENTATION_CODE: -1

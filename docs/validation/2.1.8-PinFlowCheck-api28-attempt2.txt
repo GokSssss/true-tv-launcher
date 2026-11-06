@@ -1,0 +1,10 @@
+INSTRUMENTATION_RESULT: passed=false
+INSTRUMENTATION_RESULT: report=PASS disposable VM guard
+PASS settings present in preceding task history
+FAIL Home returns from settings as the existing Activity
+java.lang.AssertionError: Home returns from settings as the existing Activity
+	at ru.truetv.launcher.PinFlowCheck.check(PinFlowCheck.java:13)
+	at ru.truetv.launcher.PinFlowCheck.onStart(PinFlowCheck.java:21)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2145)
+
+INSTRUMENTATION_CODE: 0

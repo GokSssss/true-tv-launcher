@@ -1,0 +1,6 @@
+Own disposable Android API34 VM: actual Dpad events only for product UI; no performClick.
+start-focus []
+desktop-focus [["Applications", "[73,46][125,98]"]]
+desktop-focus [["File manager", "[143,46][195,98]"]]
+desktop-focus [["Launcher settings", "[213,46][265,98]"]]
+desktop-focus [["System settings", "[283,46][335,98]"]]

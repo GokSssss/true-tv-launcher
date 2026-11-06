@@ -1,0 +1,18 @@
+INSTRUMENTATION_RESULT: report=PASS private report path starts empty and is not used
+PASS expert settings contain IR entry
+PASS opening screen never starts root
+PASS draft survives activity launch
+PASS report labels unapplied draft
+PASS unsupported apply is explained
+PASS receiver button takes remote focus
+PASS Dpad moves to codes button
+PASS learned code requires explicit confirmation
+PASS confirmed code saved only in app preferences
+PASS report provides copy and TXT export plus Cancel
+FAIL report exported without SAF picker
+ERROR java.lang.AssertionError: report exported without SAF picker
+	at ru.truetv.launcher.IrUiCheck.check(IrUiCheck.java:15)
+	at ru.truetv.launcher.IrUiCheck.onStart(IrUiCheck.java:27)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2145)
+
+INSTRUMENTATION_CODE: 0

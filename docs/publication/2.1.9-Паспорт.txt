@@ -1,0 +1,44 @@
+True TV Launcher2.1.9/code219 — возврат механики добавления и проверка переходов
+ru.truetv.launcher, min21/target34, тот же постоянный сертификат. Обновление поверх существующего TrueTV без удаления данных. Это проверяемый кандидат; исправление на физическом телевизоре НЕ подтверждено.
+
+Основание
+Владелец: Simple Launcher на том же устройстве работает, TrueTV215 также не добавляет приложения;218 белый экран после выбора и при открытии настроек, Home убирает белый.215 НЕ стабильная точка возврата. Наш код написан заново по описанию/фото; рабочая реализация Simple Launcher не перенесена. Откат219 сравнивает только НАШИ собственные2.0/215исходники. Не объявлять219 переносом исходной рабочей реализации Simple.
+
+Изменения
+Вернулась схема отдельного CatalogActivity → запись точного слота → finish → перерисовка Home при возврате. Нет AppPicker/DialogFragment, preference-driven ранней перерисовки, зависимости от Activity result или success-toast. Обычный выбор не запускает выбранное приложение и не открывает настройки. Сохранены durable commit/readback на worker и возможность назначать пакет без MAIN Activity. Существующие места не очищаются. При повторном Home/неизменённых данных Board сохраняется; единый HOME-entry218 остаётся без автоматической смены системной роли. Устаревший жестOK не запускает новую плитку.
+Общий риск ранних версий: StatusWatch.start/stop обращались к Bluetooth/network Binder на UI-потоке. Теперь они только меняют таймер/эпоху; queries/profile binding — worker с ограниченной очередью, application context, слабая ссылка на UI, проверка эпохи/активности перед отображением. Прокси профилей общие для процесса, без bind/close на каждом переходе. При зависшей службе могут ждать индикаторы, UI не должен её ждать. Это устранённый риск, не доказанная причина белого OEM-экрана. Поллинг раз3сек пока экран активен; нет сохранения BT-адресов/названий.
+Точная строка/label: Служебное управление приложениями (перезапуск и выключение). English: App service control (restart and stop). DefaultHome собственное меню сразу, статус resolve в фоне; отсутствующий OEM-экран объясняется и предлагается отдельно подтверждённый ADB. Нет ложного запуска текущего HOME под названием «выбор». Автоматических подключений/доступов/назначения роли нет.
+Код файлового провайдера/операций/экспертных удалений/TV Access backend/IR не меняется. Wi-Fi отложен. Global hardware-rendering workaround не применялся, доказательств такой причины нет.
+
+Проверено
+Точный APK SHA256 34bd31dcfe14887ff9cf121e070da529d5a32d4e7eace5d408fb808173ff9e49: API28 PinFlow40 + LauncherFix37 + Ui28 =105native assertions PASS.3цикла Settings→Home→plus→выбор→показ точной иконки, отмена, пересоздание каталога/сохранение слота, no-MAIN, durable restore, повторный/двойной Home и ровно1Home record. Свой DefaultHome menu и точное имя службы. Искусственно зависший status Binder: UI start/stop не выполняют service calls, интерфейс/переход не ждёт, paused callback отбрасывается. Результаты не являются проверкой Bluetooth-оборудования. Базовый файловый UI/счётчик/Back/сортировка и embedded helper включены, полная новая SAF-проверка этим не заявляется.
+Первый промежуточный прогон:36PASS и FAIL repeatedHome пересоздавал Board; исправлено до публикации, исходный провальный отчёт сохранён. Итоговый105PASS относится к указанному финальному APK.
+Host contracts:84domain/35expert-wire/18008geometryRSA/127IR/41report/62filesystem/32restricted/34A11y-Home/10OK-release PASS. Build portable ECJ/D8/aapt2/apksig; Gradle не запускался.375собственных runtime classes, APK ZIP/alignment/package/SDK/signature verified.
+API34 новая проверка не состоялась: стенд не завершил загрузку до подтверждённой установкиAPK; native PASS не заявляется. Физический белый экран не воспроизведён на TV; перенос всех механик Simple не заявляется. До проверки владельца не удалять рабочий Simple Launcher.
+API28 тестовые defaultHome/always_finish settings восстановлены/прочитаны обратно, эмулятор остановлен; на устройстве владельца тесты не проводились.
+
+APK: https://drive.google.com/file/d/1FiqSv8UYlpXazZKdg3tO6XuCgtIdCuQz/view
+Выпуск: https://drive.google.com/drive/folders/1LrEdmf8B-P3pDdr7lQb0EoOEZEbyMwla
+Чек-лист: https://drive.google.com/file/d/1kZVeFvJ4G7-BtyNGivgt5pKXjG323jJs/view
+SOURCE: https://drive.google.com/file/d/1-fUdAWdk201NRm9ecWM72sXx3-GVFwaQ/view — один полный ZIP в Resources/Sources, без signing/cache/APK; снимок до собственногоID/финального readback. Поздние доказательства в живых документах, архив не переписывается.
+Предыдущий218: https://drive.google.com/drive/folders/1r6x3_OkpjK_LyJQF23XQ-uSCHPPaIKbC (по сообщению владельца также сбой).
+215 оставлен для сравнения до216: https://drive.google.com/drive/folders/1O5BxfKZiYhh64xa2E5fgsMYoFDmm3vr1 — известный владельцу сбой добавления, не стабильный резерв.
+Проект: https://drive.google.com/drive/folders/1HSemiU8S2f8ZPpVLLfJyvjLCbD7PATmn
+Сертификат SHA256 a5a632bd6a8b8e2c3e3623ee245c3a5c3652c0c6b32751a35a49d6a9c2e8fa33
+
+Итог проверки и хранения2.1.9 (позднее SOURCE-снимка)
+APK381581байт SHA25634bd31dcfe14887ff9cf121e070da529d5a32d4e7eace5d408fb808173ff9e49. SOURCE12002576байт SHA25641d439054f7d657082c3a9056886e2d1814f97b1e587498d5ad3f0c70a98f31e. ZIP CRC/350строк SOURCE_INPUTS проверены; чистая сборка из распакованного Source с внешними cache/ключом дала точный APK. Новый APK/SOURCE скачаны с Drive заново и побайтово/hash/CRC проверены. Предыдущие218 и ключевой215: cached raw снова сверены SHA/CRC, текущие Drive размеры/mtime/родители неизменны; это не новая raw-загрузка прежних бинарников.
+API28 финальный APK:40PinFlow+37LauncherFix+28Ui=105native assertions PASS. Реальные окна и история,3цикла настройки/Home/плюс/выбор, сохранение/показ ячейки, отмена, recreate каталога/no-MAIN, двойной Home/одинHome record, замедленный vendor service без UI service calls. Проверка с задержанной службой — искусственная, не реальное Bluetooth-оборудование. Первый промежуточный кандидат провалил repeatedHome после36PASS, исправлен и не публиковался. Host contracts и375runtime classes/audit/signature PASS. Это не новая полная SAF/provider/root/physicalTV сертификация.
+API34: новый эмулятор не достиг sys.boot_completed=1 за более5мин, ADB offline→device; остановлен до подтверждённой установки219/начала native. Нового PASS на Android14 НЕТ. Предыдущие217 API34 проверки не объявляются219 проверкой. APK универсального диапазона min21/target34; версия9 только стенд. Оба стенда остановлены;28изменённые Home/always_finish прочитаны восстановленными,34новые тесты/настройки не выполнялись. Одноразовые writable images убраны, SDK/конфигурации сохранены.
+Владелец прямо подтвердил215 сбой добавления,218 белый после добавления/настроек, Simple на том же устройстве работает.219 исправляет собственную реализацию, исходная рабочая реализация Simple НЕ переносилась; это признано прямо в чате. Физическое устранение белого НЕ подтверждено. Не называть215 стабильным или219 завершённым переносом всех механик Simple.
+SOURCE: https://drive.google.com/file/d/1-fUdAWdk201NRm9ecWM72sXx3-GVFwaQ/view
+APK: https://drive.google.com/file/d/1FiqSv8UYlpXazZKdg3tO6XuCgtIdCuQz/view
+Выпуск: https://drive.google.com/drive/folders/1LrEdmf8B-P3pDdr7lQb0EoOEZEbyMwla
+Чек-лист: https://drive.google.com/file/d/1kZVeFvJ4G7-BtyNGivgt5pKXjG323jJs/view
+VM28стол: https://drive.google.com/file/d/1BE6wutujdaAsx0fcKPQ-ZxIp3g6mTohc/view
+VM28DefaultHome: https://drive.google.com/file/d/1rqdcUiIswFk7RvN1sGjtjJCWA_ZvWhlZ/view
+Фото владельца, продолжение: https://drive.google.com/file/d/15nCSPLSaeYYez6MElq8ALeN86wvyC4yu/view
+SOURCE заморожен до этих позднихID/доказательств; pending внутри снимка — состояние упаковки, актуальные доказательства в живых документах. Опубликованные APK/SOURCE не переписываются. После проверки219/218/215 и паспортов старый неключевой217 удалить по общим правилам; сохранять219/218 плюс215 только для сравнения до216, не как рабочий возврат. Журналы/нужные снимки217 сохраняются.
+
+05.11.2026 UTC — окончательная сверка публикации219
+16текстов/изображений скачаны заново:9живыхдокументов, паспорта219/218/215, чек-лист219,2VMpng, фото владельца — точные байты и родители совпали. Новый APK/SOURCE219 raw/CRC/SHA и чистая Source-сборка совпали. После проверки219/218/215 удалены старые неключевые217APK381581/SOURCE11452813/паспорт8895байт, всего11843289байт; затем подтверждённая пустая папка217. Журналы/нужные screenshots/checklist217 сохранены, другие проекты не менялись. Сохраняются ровно два последних219/218 плюс215для сравнения с известным владельцу сбоем, не рабочий резерв. Корень/модуль/Source/docs родители сохранены, sharing не менялся. √ означает аудит правил хранения, НЕ исправность физическогоTV. Не запрашивать удалённые217 ID как существующий комплект. Опубликованные APK/SOURCE219/218/215 неизменны; поздние итоги только в живых документах.

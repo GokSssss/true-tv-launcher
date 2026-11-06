@@ -1,0 +1,8 @@
+Disposable Android9 VM only. Stock216, actual Dpad key injection; no product mutation.
+initial-focus [{"class": "android.widget.FrameLayout", "text": "", "content-desc": "Applications", "package": "ru.truetv.launcher", "bounds": "[63,46][115,98]"}]
+down-focus-0 [{"class": "android.widget.FrameLayout", "text": "", "content-desc": "Add app", "package": "ru.truetv.launcher", "bounds": "[24,104][264,296]"}]
+after-plus [{"class": "android.widget.GridView", "text": "", "content-desc": "", "package": "ru.truetv.launcher", "bounds": "[24,136][1256,708]"}]
+after-pick [{"class": "android.widget.FrameLayout", "text": "", "content-desc": "True TV Control Probe", "package": "ru.truetv.launcher", "bounds": "[24,104][264,296]"}]
+visible-home-tiles ["Applications", "File manager", "Launcher settings", "System settings", "Bluetooth", "TV power", "True TV Control Probe", "Add app", "Add app", "Add app", "Add app", "Add app", "Add app", "Add app", "Add app", "Add app", "Add app", "Add app", "Add app", "Add app", "Add app"]
+after-repeated-home [{"class": "android.widget.FrameLayout", "text": "", "content-desc": "True TV Control Probe", "package": "ru.truetv.launcher", "bounds": "[24,104][264,296]"}]
+home-resolver "priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=true\nru.truetv.launcher/.HomeActivity"

@@ -1,0 +1,43 @@
+s_glBindAttribLocation: bind attrib 0 name position
+s_glBindAttribLocation: bind attrib 1 name color
+s_glBindAttribLocation: bind attrib 2 name localCoord
+INSTRUMENTATION_RESULT: report=PASS dark default independent of system theme
+PASS settings uses dark canvas
+PASS three-way theme selector
+PASS exactly Dark Light Black options
+PASS separate wallpaper checkbox
+PASS old ambiguous toggle absent
+PASS menu order opens list
+PASS exactly current value checked
+PASS cursor begins at current value
+PASS no checkmark in option text
+PASS no decorative slider icon in option
+PASS cursor moves independently
+PASS checked value stays until confirmation
+PASS first option wraps to Cancel
+PASS Cancel wraps to first option
+PASS one choice callback
+PASS unavailable action has title and own subtitle
+PASS permission explanation directly under action
+PASS unavailable note visible
+PASS available action has no permission note
+PASS grey action remains focusable
+PASS compact normal rows at most40dp
+PASS no Open action
+PASS no Open action
+PASS no Open action
+PASS no Open action
+PASS saved action order applies
+PASS App info remains last
+PASS light settings background
+PASS light foreground palette
+PASS light catalog background
+PASS light readable catalog text
+PASS black settings background
+PASS black foreground palette
+PASS black catalog background
+PASS black readable catalog text
+PASS wallpaper enabled in settings
+PASS wallpaper is not hidden behind opaque background
+Checks=38
+INSTRUMENTATION_CODE: -1

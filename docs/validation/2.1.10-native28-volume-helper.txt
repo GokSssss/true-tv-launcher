@@ -1,0 +1,7 @@
+INSTRUMENTATION_RESULT: passed=true
+INSTRUMENTATION_RESULT: report=Verified same-device ADB uid=2000
+PASS detached own-APK helper running through actual ADB
+PASS helper survives ADB connection closure
+PASS explicit stop releases own helper lock
+No actual physical remote or audio/CEC behavior claim.
+INSTRUMENTATION_CODE: -1

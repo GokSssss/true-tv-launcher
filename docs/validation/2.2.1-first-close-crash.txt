@@ -1,0 +1,29 @@
+11-05 23:14:07.022  3034  3034 E AndroidRuntime: FATAL EXCEPTION: main
+11-05 23:14:07.022  3034  3034 E AndroidRuntime: Process: ru.truetv.launcher, PID: 3034
+11-05 23:14:07.022  3034  3034 E AndroidRuntime: java.lang.RuntimeException: Unable to pause activity {ru.truetv.launcher/ru.truetv.launcher.ShareSettingsActivity}: android.os.NetworkOnMainThreadException
+11-05 23:14:07.022  3034  3034 E AndroidRuntime: 	at android.app.ActivityThread.performPauseActivityIfNeeded(ActivityThread.java:4031)
+11-05 23:14:07.022  3034  3034 E AndroidRuntime: 	at android.app.ActivityThread.performPauseActivity(ActivityThread.java:3986)
+11-05 23:14:07.022  3034  3034 E AndroidRuntime: 	at android.app.ActivityThread.handlePauseActivity(ActivityThread.java:3938)
+11-05 23:14:07.022  3034  3034 E AndroidRuntime: 	at android.app.servertransaction.PauseActivityItem.execute(PauseActivityItem.java:45)
+11-05 23:14:07.022  3034  3034 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+11-05 23:14:07.022  3034  3034 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+11-05 23:14:07.022  3034  3034 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+11-05 23:14:07.022  3034  3034 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-05 23:14:07.022  3034  3034 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+11-05 23:14:07.022  3034  3034 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+11-05 23:14:07.022  3034  3034 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-05 23:14:07.022  3034  3034 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+11-05 23:14:07.022  3034  3034 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+11-05 23:14:07.022  3034  3034 E AndroidRuntime: Caused by: android.os.NetworkOnMainThreadException
+11-05 23:14:07.022  3034  3034 E AndroidRuntime: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onNetwork(StrictMode.java:1513)
+11-05 23:14:07.022  3034  3034 E AndroidRuntime: 	at com.android.org.conscrypt.Platform.blockGuardOnNetwork(Platform.java:415)
+11-05 23:14:07.022  3034  3034 E AndroidRuntime: 	at com.android.org.conscrypt.ConscryptFileDescriptorSocket.shutdownAndFreeSslNative(ConscryptFileDescriptorSocket.java:1005)
+11-05 23:14:07.022  3034  3034 E AndroidRuntime: 	at com.android.org.conscrypt.ConscryptFileDescriptorSocket.close(ConscryptFileDescriptorSocket.java:1000)
+11-05 23:14:07.022  3034  3034 E AndroidRuntime: 	at ru.truetv.bridge.Transfer$Receiver.cancel(Transfer.java:25)
+11-05 23:14:07.022  3034  3034 E AndroidRuntime: 	at ru.truetv.bridge.Transfer$Receiver.close(Transfer.java:26)
+11-05 23:14:07.022  3034  3034 E AndroidRuntime: 	at ru.truetv.launcher.ShareSettingsActivity.stopReceiver(ShareSettingsActivity.java:64)
+11-05 23:14:07.022  3034  3034 E AndroidRuntime: 	at ru.truetv.launcher.ShareSettingsActivity.onPause(ShareSettingsActivity.java:44)
+11-05 23:14:07.022  3034  3034 E AndroidRuntime: 	at android.app.Activity.performPause(Activity.java:7329)
+11-05 23:14:07.022  3034  3034 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnPause(Instrumentation.java:1465)
+11-05 23:14:07.022  3034  3034 E AndroidRuntime: 	at android.app.ActivityThread.performPauseActivityIfNeeded(ActivityThread.java:4021)
+11-05 23:14:07.022  3034  3034 E AndroidRuntime: 	... 12 more

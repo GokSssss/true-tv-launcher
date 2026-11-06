@@ -1,0 +1,13 @@
+INSTRUMENTATION_RESULT: passed=false
+INSTRUMENTATION_RESULT: report=PASS disposable VM guard SDK28
+PASS real app ADB connection and same-device proof
+PASS stock Home fixture resolved on this Android version
+PASS fixture service enabled before selection
+PASS own concrete service selectable in UI
+FAIL actual Dpad Up from service list selects first EnableADB button, cycle0
+java.lang.AssertionError: actual Dpad Up from service list selects first EnableADB button, cycle0
+	at ru.truetv.launcher.RuntimeSetupCheck.check(RuntimeSetupCheck.java:17)
+	at ru.truetv.launcher.RuntimeSetupCheck.onStart(RuntimeSetupCheck.java:34)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2145)
+
+INSTRUMENTATION_CODE: 0

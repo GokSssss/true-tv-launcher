@@ -1,0 +1,58 @@
+INSTRUMENTATION_RESULT: passed=true
+INSTRUMENTATION_RESULT: report=PASS disposable SDK28 VM only
+PASS receiver fixture is disabled before explicit enable
+PASS real connected-device foreground receiver starts
+PASS phone instrumentation waits for ordinary exported share target
+PASS actual phone content URIs yield exact batch metadata
+PASS phone chooser finishes before TV acceptance
+PASS nothing is published before TV accepts
+PASS actual receive overlay exists: null
+PASS five-choice receive window is actually visible over another app
+PASS initial remote focus is visibly on Accept
+INSTRUMENTATION_STATUS: phase=phone_waiting_share
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: phase=phone_backgrounded
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_RESULT: passed=true
+INSTRUMENTATION_RESULT: report=mDNS discovered TV; actual share target selected it; phone confirmed key/code; Activity finished while foreground service retained URI grants; result=Files sent: 2
+INSTRUMENTATION_CODE: -1
+PASS separate PHONE UID: mDNS, first confirmation, service and URI-grant lifetime passed
+PASS receiver returns to idle without a foreground-window leak
+PASS two files published in public Downloads
+PASS actual Downloads bytes match binary and empty source
+PASS accept once does not trust device
+PASS unknown peer requires a decision, mode0
+PASS decision applied to actual TLS payload, mode0
+PASS receiver returns to idle without a foreground-window leak
+PASS Downloads collision preserves existing files, total2
+PASS unknown peer requires a decision, mode5
+PASS decision applied to actual TLS payload, mode5
+PASS receiver returns to idle without a foreground-window leak
+PASS Downloads collision preserves existing files, total3
+PASS background acceptance hides transfer window
+PASS unknown peer requires a decision, mode2
+PASS decision applied to actual TLS payload, mode2
+PASS receiver returns to idle without a foreground-window leak
+PASS Downloads collision preserves existing files, total4
+PASS always foreground trust saved by key
+PASS trusted peer is automatically accepted, mode1
+PASS decision applied to actual TLS payload, mode1
+PASS receiver returns to idle without a foreground-window leak
+PASS Downloads collision preserves existing files, total5
+PASS unknown peer requires a decision, mode3
+PASS decision applied to actual TLS payload, mode3
+PASS receiver returns to idle without a foreground-window leak
+PASS Downloads collision preserves existing files, total6
+PASS always background trust saved by key
+PASS background acceptance hides transfer window
+PASS trusted peer is automatically accepted, mode2
+PASS decision applied to actual TLS payload, mode1
+PASS receiver returns to idle without a foreground-window leak
+PASS Downloads collision preserves existing files, total7
+PASS idle receiver releases transfer-only CPU wake lock
+PASS legacy staging is hidden from integrated file list
+PASS receiver restart removes its journaled partial file
+PASS pending journal cleared after restart recovery
+PASS Wi-Fi reception leaves enabled Accessibility services unchanged
+Checks=48
+INSTRUMENTATION_CODE: -1

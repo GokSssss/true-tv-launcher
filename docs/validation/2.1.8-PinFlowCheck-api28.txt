@@ -1,0 +1,23 @@
+INSTRUMENTATION_RESULT: passed=true
+INSTRUMENTATION_RESULT: report=PASS disposable VM guard
+PASS settings present in preceding task history
+PASS own default verified before real Home key
+PASS Home returns from settings as the existing Activity: focus=true, resumed=true, destroyed=false
+PASS plus opens dialog on existing Home
+PASS picker window belongs to same Home
+PASS picker window has explicit matching background
+PASS picker has application content, not blank surface
+PASS Home recreation completed
+PASS picker restores exact slot and search across recreation
+PASS cancel changes no slot and returns to Home
+PASS fixture without launch Activity available for pinning
+PASS only picker window closed after confirmed save
+PASS new tile displayed and saved before picker closes
+PASS late click on closed picker cannot enqueue another assignment
+PASS adding never starts CatalogActivity
+PASS trailing OK and repeated discrete IR clicks cannot open App info
+PASS fresh OK after release still opens intentionally selected tile
+PASS next plus works normally
+PASS Home cancels picker without assigning or leaving dialog
+Checks=20
+INSTRUMENTATION_CODE: -1

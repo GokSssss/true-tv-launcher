@@ -1,0 +1,4 @@
+PASS 84 domain assertions
+PASS 35 expert command/RSA/ADB framing/root-runner checks
+PASS 18008 desktop geometry and persisted RSA checks (180 grid configurations)
+IR diagnostic host checks: 127 PASS (no hardware/root claim)

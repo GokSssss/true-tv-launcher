@@ -1,0 +1,43 @@
+INSTRUMENTATION_RESULT: passed=true
+INSTRUMENTATION_RESULT: report=PASS disposable VM guard
+PASS slow vendor status request reached worker
+PASS start/stop issue no platform service calls on UI thread
+PASS blocked status request cannot delay UI or update paused view
+PASS test Home default confirmed
+PASS settings opens with content, cycle 0
+PASS settings has drawn preference rows, cycle 0
+PASS requested service title is exact
+PASS Default Home preference opens own menu
+PASS Home key returns from settings to same Home, cycle 0
+PASS plus starts standalone catalog Activity
+PASS catalog has app content
+PASS catalog finishes and existing Home owns focus
+PASS onResume rebuilds desktop after catalog finish
+PASS exact slot saved and tile visible, cycle 0
+PASS settings opens with content, cycle 1
+PASS settings has drawn preference rows, cycle 1
+PASS Home key returns from settings to same Home, cycle 1
+PASS plus starts standalone catalog Activity
+PASS catalog has app content
+PASS catalog finishes and existing Home owns focus
+PASS onResume rebuilds desktop after catalog finish
+PASS exact slot saved and tile visible, cycle 1
+PASS settings opens with content, cycle 2
+PASS settings has drawn preference rows, cycle 2
+PASS Home key returns from settings to same Home, cycle 2
+PASS plus starts standalone catalog Activity
+PASS catalog has app content
+PASS catalog finishes and existing Home owns focus
+PASS onResume rebuilds desktop after catalog finish
+PASS exact slot saved and tile visible, cycle 2
+PASS plus starts standalone catalog Activity
+PASS Back cancels without a saved assignment
+PASS plus starts standalone catalog Activity
+PASS catalog recreation retains target slot
+PASS catalog finishes and existing Home owns focus
+PASS no-launch-Activity app can still be assigned
+PASS double Home while already Home keeps existing board
+PASS double Home does not change default
+PASS task history has exactly one Home Activity
+Checks=40
+INSTRUMENTATION_CODE: -1

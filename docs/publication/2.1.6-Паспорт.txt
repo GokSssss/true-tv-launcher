@@ -1,0 +1,36 @@
+True TV Launcher2.1.6/code216 — TV Access, добавление и Home
+ru.truetv.launcher, min21/target34,04.11.2026. Обновлять поверх2.1.5 тем же сертификатом, без удаления данных.
+Проект:https://drive.google.com/drive/folders/1HSemiU8S2f8ZPpVLLfJyvjLCbD7PATmn
+Выпуск:https://drive.google.com/drive/folders/19FHAn3YOZV-fwiinQ1mRNo_L5CB8lQKg
+Чек-лист:https://drive.google.com/file/d/1dg1cBfKsxok97gFmSM0GFYuj0Cj_Ltzo/view
+Предыдущий215:https://drive.google.com/drive/folders/1O5BxfKZiYhh64xa2E5fgsMYoFDmm3vr1
+
+Изменения
+Снять ограничение настроек открывает встроенный TV Access вместо внешнего приложения/автоперехода в A11y. Выбор приложений с соответствующими службами, значки, legacy RSA ADB/инструкция/адрес/проверка этого устройства. Подтверждённый доступ ACCESS_RESTRICTED_SETTINGS только у выбранных пакетов/текущего профиля, чтение до/после; уже разрешённый не меняется. Службы затем включает пользователь вручную. На Android ниже13 этого ограничения нет: пояснение и ни одной app-op команды. Скрытый OEM список служб этим не восстанавливается. Никакого автоподключения/автовключения службы, нового root, внешнего TV Access APK или изменения проекта24.
+Добавление через плюс разрешает закрепление приложений без MAIN/LAUNCHER; открытие таких плиток ведёт в свойства. Явный результат возвращается в нужный слот Home, сохранение/фокус после layout. Безусловная пересборка в onResume удалена, повторные HOME intents не пересоздают неизменённую сетку; системный Home default автоматически не меняется. На системном экране True TV Launcher/Wink выбрать True TV Launcher → Всегда.
+Счётчик Выбрано N/M полностью скрыт/пуст при нуле, появляется при реальном выборе. Короткая Порядок/Sort order и короткое вторичное описание, полная Сортировка в диалоге. Дата/режимы215 сохранены. Wi-Fi остаётся заглушкой, ИК/удаление системных APK не расширялись.
+
+Проверки216
+104PASS на одноразовом Android9/API28:35LauncherFixCheck +69FileVisualCheck. Чистые настройки: плюс для приложения с MAIN и без MAIN, два точных слота, возврат/фокус и новый Home instance; повторные одиночные/быстрые двойные Home сохраняют Board, данные и явно назначенный в VM default. Снимок собственного foreground подтверждён. Встроенный AccessActivity без внешнего APK: только пакеты с A11y-службами, без предвыбора/подключения, выбранный пакет/адрес; возврат не пересобирает неизменённый Board. Нулевой счётчик GONE/пусто, появление при выборе/снятие Back, фактическая русская подпись Порядок целиком на первой строке.69FileVisual сохраняют4режима сортировки/перезапуск/поиск/выделение/Back,создание папки/TXT,языки и колонки.3снимка просмотрены.
+Host:32RestrictedCheck по точным командам/эффективным allow/default/неоднозначным ответам/ошибкам/Android<33/отсутствию secure writes; fake runner не проверяет реальное снятие app-op Android13+. Также84domain/35expert/18008geometry-RSA/127IR/41report/62filesystem PASS. ECJ/D8/aapt2/apksig,359собственных runtime-классов, min21/target34, прежний сертификат v1/v2. Gradle не запускался.
+Первый LauncherFixCheck завершился процессным crash-отчётом из-за непойманного AssertionError теста на UI thread: добавленная плитка уже существовала, фокус до layout не был установлен. Runtime исправлен post/requestFocusFromTouch, тест теперь ловит/репортит ошибки и ожидает focus. Финальный35PASS на новом точном APK. Первая попытка/trace сохранены, не считаются PASS.
+Физический Grundig/Beelink, OEM двойной Home и реальный grant ACCESS_RESTRICTED_SETTINGS на Android13+ не проверялись. Полный внешний91provider-прогон215 не повторялся в216: provider/URI/операции не менялись, изменены счётчик/подпись UI; прежняя проверка в SOURCE215. Никаких проверок на устройстве владельца. Одноразовый VM остановлен, writable images удалены, тестовый Home default перед завершением возвращён Launcher3.
+
+APK361101байт SHA256:d2e7adc53483a2eeb6cc34024250cdffab74131ed3ce8878bbe350b6cc405013
+Сертификат SHA256:a5a632bd6a8b8e2c3e3623ee245c3a5c3652c0c6b32751a35a49d6a9c2e8fa33
+
+Восстановление
+python3 tools/bootstrap.py, python3 tools/build.py (Java21). Постоянный ключ .signing вне SOURCE, предоставляется отдельно; инструменты публичные и закреплены SHA256. Один SOURCE в Resources/Sources, SOURCE_INPUTS.sha256, без APK/DEX/classes/кэшей/ключей. Поздние ссылки/итоги чистой сборки/Drive-readback дополняют живой паспорт, опубликованные APK/SOURCE не меняются. Сохранять216/215; старый214 без ключевого статуса очищается после проверки обоих комплектов.
+
+Выпуск216:https://drive.google.com/drive/folders/19FHAn3YOZV-fwiinQ1mRNo_L5CB8lQKg
+APK:https://drive.google.com/file/d/1YxagN_2zodn_5wKYD-1g5V9nnnv4Xibe/view
+Чек-лист:https://drive.google.com/file/d/1dg1cBfKsxok97gFmSM0GFYuj0Cj_Ltzo/view
+TV Access:https://drive.google.com/file/d/1_I2o9yJFlbfyTqkT2XrAU4RSLuZ4uAe5/view
+Рабочий стол:https://drive.google.com/file/d/1d3YiIpdzOgg-LWbfveRchQIltENKfGSl/view
+Файлы:https://drive.google.com/file/d/1uGxPGb_iK9jWwiqf7n8yOywF3iojc_-r/view
+Предыдущий215:https://drive.google.com/drive/folders/1O5BxfKZiYhh64xa2E5fgsMYoFDmm3vr1
+Проект:https://drive.google.com/drive/folders/1HSemiU8S2f8ZPpVLLfJyvjLCbD7PATmn
+
+Итог публикации216
+SOURCE:https://drive.google.com/file/d/1Ya9qbbMsxQhJmK-1z9bqlIB-4MOQvOmh/view
+SOURCE11240492байт SHA256f50e82c0f6e7031aa9644291bd9aaa7a9f3dbdbe0633576a9dd65b4de987534b. Все SOURCE_INPUTS.sha256 проверены в распакованном архиве; чистая сборка с отдельно предоставленными инструментами/ключом дала побайтово тот же APK. APK/SOURCE216 прочитаны обратно с Drive, байты/SHA256 совпали, ZIP CRC корректен. Чек-лист/3снимка и предыдущие APK/паспорт215 сверены точным чтением; SOURCE215 совпадает с сохранённым сырым Drive-download, текущая metadata ID/размер/время/родитель не изменилась. Опубликованные APK/SOURCE не переписываются; поздние результаты/ссылки внесены в живой паспорт/журналы. После проверки216/215 удалить неключевой214; сохранены история/нужные снимки.

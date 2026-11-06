@@ -1,0 +1,9 @@
+plugins { id 'com.android.application' }
+android {
+ namespace 'ru.truetv.launcher'
+ compileSdk 34
+ defaultConfig { applicationId 'ru.truetv.launcher'; minSdk 21; targetSdk 34; versionCode 233; versionName '2.2.3' }
+ sourceSets { main.java.srcDirs += ['../bridge/src/main/java', '../bridge-android/src/main/java'] }
+ buildFeatures { buildConfig true }
+ compileOptions { sourceCompatibility JavaVersion.VERSION_1_8; targetCompatibility JavaVersion.VERSION_1_8 }
+}

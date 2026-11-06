@@ -1,0 +1,22 @@
+INSTRUMENTATION_RESULT: passed=true
+INSTRUMENTATION_RESULT: report=PASS disposable VM guard SDK34
+PASS real app ADB connection and same-device proof
+PASS stock Home fixture resolved on this Android version
+PASS fixture starts with restricted-settings gate blocked
+PASS own gate blocked before explicit UI action
+PASS real Android13+ restricted-settings app-op confirmed
+PASS fixture service enabled before selection
+PASS own concrete service selectable in UI
+PASS selection and opening confirmation do not enable service
+PASS explicit service-enable confirmation clicked
+PASS UI activation confirmed by Android AccessibilityManager
+PASS pre-existing fixture service preserved
+PASS actual launcher AccessibilityService connected
+PASS own restricted-settings gate allowed before activation
+PASS real deactivation removes only selected service and preserves fixture
+PASS last test service can be disabled through product command
+PASS different Home fixture assigned before mutation
+PASS actual app ADB permanently assigns own Home
+PASS quick double Home preserves confirmed default
+Checks=19
+INSTRUMENTATION_CODE: -1

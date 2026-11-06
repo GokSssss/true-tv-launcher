@@ -1,0 +1,20 @@
+INSTRUMENTATION_RESULT: report=PASS Android saved RSA identity reopened without CRT cast
+PASS Android restored key signs for existing public identity
+PASS legacy artwork aspect preserved
+PASS adaptive artwork no longer cropped to circle
+PASS adaptive square has rounded corners
+PASS 5x4 spans full width
+PASS fixed desktop icon size
+PASS frame has constant6dp inset
+PASS no-label frame square
+PASS focus frame independent of wide slot
+PASS no second Android highlight over entire slot
+PASS system app list loads
+PASS system rows include icon and two text fields
+PASS list takes remote focus
+PASS only top button has focus
+PASS old row highlight cleared when focus leaves list
+PASS active button has high-contrast text
+PASS remote right moves to Refresh
+Checks=18
+INSTRUMENTATION_CODE: -1

@@ -1,0 +1,8 @@
+plugins { id 'com.android.application' }
+android {
+ namespace 'ru.truetv.totv'
+ compileSdk 34
+ defaultConfig { applicationId 'ru.truetv.totv'; minSdk 21; targetSdk 34; versionCode 102; versionName '1.0.2' }
+ sourceSets { main.java.srcDirs += ['../bridge/src/main/java', '../bridge-android/src/main/java'] }
+ compileOptions { sourceCompatibility JavaVersion.VERSION_1_8; targetCompatibility JavaVersion.VERSION_1_8 }
+}

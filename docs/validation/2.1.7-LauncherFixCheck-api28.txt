@@ -1,0 +1,39 @@
+INSTRUMENTATION_RESULT: passed=true
+INSTRUMENTATION_RESULT: report=PASS disposable VM guard
+PASS catalog loaded on fresh install
+PASS fixture with launcher activity
+PASS fixture without launcher activity
+PASS plus opens picker for slot 0
+PASS picker includes ru.truetv.probe
+PASS picked package stored in exact slot 0
+PASS selection finishes picker even without launcher activity
+PASS focus returns to added tile 0
+PASS plus opens picker for slot 1
+PASS picker includes ru.truetv.launcher.tests
+PASS picked package stored in exact slot 1
+PASS selection finishes picker even without launcher activity
+PASS focus returns to added tile 1
+PASS assignments restored in new Home instance
+PASS foreground Home updates when saved assignment arrives without Activity result
+PASS test-only Home default assigned on disposable VM
+PASS single Home keeps existing board 0
+PASS single Home keeps existing board 1
+PASS single Home keeps existing board 2
+PASS rapid double Home does not rebuild board
+PASS repeated Home preserves system default
+PASS repeated Home keeps desktop assignments
+PASS restricted entry opens embedded TV Access without external helper
+PASS embedded service list loaded
+PASS only apps declaring bound Accessibility services are eligible
+PASS opening helper does not preselect or grant apps
+PASS remote selection toggles one package
+PASS ADB address visible in own helper
+PASS return from embedded helper keeps board when settings unchanged
+PASS own file fixture
+PASS zero-selection counter is hidden and reserves no width
+PASS counter appears after actual selection
+PASS Back clears selection and hides counter without leaving files
+PASS short Russian sorting caption
+PASS entire Russian caption stays on first line
+Checks=36
+INSTRUMENTATION_CODE: -1

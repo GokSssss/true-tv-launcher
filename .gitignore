@@ -1,0 +1,30 @@
+.signing/
+.gradle/
+**/build/
+.cache/
+artifacts/
+local.properties
+
+# Local credentials and signing material
+.env
+.env.*
+!.env.example
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+adbkey
+
+# Private device recordings and internal Drive state
+docs/owner/
+modules/file-manager/resources/references/
+docs/drive-state.json
+
+# Editors and generated Python files
+.idea/
+*.iml
+__pycache__/
+*.pyc
+.DS_Store

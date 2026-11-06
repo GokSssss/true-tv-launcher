@@ -1,0 +1,6 @@
+helper: TRUE_TV_VOLUME_STOPPED
+enabled_accessibility_services=null
+accessibility_enabled=0
+always_finish_activities=null
+Home=priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=true
+com.android.launcher3/.Launcher

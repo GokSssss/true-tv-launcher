@@ -1,0 +1,11 @@
+Disposable API28 VM with data originally populated on216; prior217 diagnostic candidates did not clear launcher settings. Final update uses install -r, no pm clear.
+boot "API28 ready"
+VM_ONLY "Wait on exact system ANR"
+saved-tiles-before-update [["[133,46][185,98]", "File manager"], ["[203,46][255,98]", "Launcher settings"], ["[24,104][264,296]", "True TV Control Probe"], ["[273,46][325,98]", "System settings"], ["[343,46][403,98]", "Bluetooth"], ["[421,46][473,98]", "TV power"], ["[63,46][115,98]", "Applications"]]
+install-r "artifacts/2.1.7-True-TV-Launcher.apk"
+install-r "tests/probe/build/probe.apk"
+install-r "tests/build/tests.apk"
+saved-tiles-after-update [["[133,46][185,98]", "File manager"], ["[203,46][255,98]", "Launcher settings"], ["[24,104][264,296]", "True TV Control Probe"], ["[273,46][325,98]", "System settings"], ["[343,46][403,98]", "Bluetooth"], ["[421,46][473,98]", "TV power"], ["[63,46][115,98]", "Applications"]]
+PASS-update-preserves-all-pinned-tiles 7
+Clarification: the initial FrameLayout query included six header controls; actual pinned app tiles (top>=100), compared before/after: [["[24,104][264,296]", "True TV Control Probe"]]
+PASS exact pinned app tile count preserved: 1

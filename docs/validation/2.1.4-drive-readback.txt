@@ -1,0 +1,20 @@
+PASS 176FC2efqlMVcWw6C2AU0BIX6fyf_gryo bytes/SHA256 b612dbd768d2761ed651c567a0520fa5b105fb6287a14b60a7bd8bfc82389153
+PASS 1Fjdlgl_9g0uFZjiISNAmA-kpdHzeV35a bytes/SHA256 39c8176d980f8616c91c01f9bca0d70da67a3c11c658064f5c54e39f19e09c4a
+PASS 1H8sbtoGJsuwzjKA9sxD-E_XJjER8B0xQ bytes/SHA256 63507aa8a8bab743cfe702d5bf0413d90edeb3b91bf7ba6fb8372838e1031754
+PASS 1tf1zDPO5vrH-ZliIoBRMaKMs_mOEsOCT bytes/SHA256 ede5dba820167f3ee70938c77255246c7374b7769ec4ac3188bcb57bab30e6af
+PASS 1dNPJ5leRnpoE0xupwbEAZ8Re3AGy1jA- bytes/SHA256 829ab8c40eb5c08260f07e7fc5ebeb9ca382042170c1382f9b4f825ef4f47f19
+PASS 1GFVVUhM3kS4eERltRjMa9nQP5SmJ4Vhf bytes/SHA256 5e800ba4b3d7cf4b4007dccde2da536e18d46bc2bb013c134758710141d40945
+PASS 1Pfn-HdwoaW32XJqJcBdDdFId9KdAbqM1 exact bytes SHA256 ecec033b01e2f81d3a186056e79395a046a3d8cec3e79649f9bc07ca6a8a16a3
+PASS 1vTptYmR5KFbUfj_2ikbUMS1nnL4Dykm2 exact bytes SHA256 ca522569d9707afc798b524a29f11c74bc55f8f4504c16fb6f4dd5c9c9aad5f3
+PASS 1ApXgCsp3jizBdXo4Ld_QGC_ESet0dS3T exact bytes SHA256 93471845a6560af10c672dfb4116f74c4a66900a20c7280000329bfbf0329a5d
+PASS live exact bytes 22.1База!
+PASS live exact bytes Журнал улучшений True TV Launcher.txt
+PASS live exact bytes 30_DEVELOPMENT_LOG_RU.txt
+PASS live exact bytes README.md
+PASS live exact bytes AGENTS.md
+PASS live exact bytes docs/PROVENANCE.md
+PASS live exact bytes modules/file-manager/Требования файлового менеджера.txt
+PASS live exact bytes modules/file-manager/История разработки файлового менеджера.txt
+PASS live exact bytes modules/file-manager/Журнал улучшений Файловый менеджер.txt
+PASS live exact bytes docs/publication/2.1.4-Паспорт.txt
+PASS cleanup: older unkeyed212 release/APK/SOURCE/passport removed after214+213 verification; disposable emulator stopped and writable images removed; artifacts214/213 retained.

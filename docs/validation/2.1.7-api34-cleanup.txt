@@ -1,0 +1,12 @@
+cmd role add-role-holder --user 0 android.app.role.HOME com.android.launcher3 1 -> 0 
+settings delete global system_server_watchdog_timeout_ms -> 0 Deleted 1 rows
+settings put global bluetooth_on 1 -> 0 
+settings get global system_server_watchdog_timeout_ms -> 0 null
+settings get global bluetooth_on -> 0 1
+settings --user 0 get secure enabled_accessibility_services -> 0 null
+settings --user 0 get secure accessibility_enabled -> 0 0
+pm list packages -d com.android.documentsui -> 0 
+pm list packages -d com.android.dreams.basic -> 0 
+id -u -> 0 2000
+Emulator stop requested; original VM global values restored.
+QEMU stopped; disposable writable images removed: userdata-qemu.img, userdata-qemu.img.qcow2, cache.img, cache.img.qcow2, encryptionkey.img.qcow2

@@ -1,0 +1,37 @@
+INSTRUMENTATION_RESULT: passed=true
+INSTRUMENTATION_RESULT: report=PASS disposable VM only
+PASS fresh theme black
+PASS fresh grid5x4
+PASS automatic icons; labels and normal borders off
+PASS zero opacity; wallpaper and keep-awake off
+PASS clear clock and numeric date
+PASS menu56 and launcher shown
+PASS Bluetooth on, running off, close/restart first
+PASS actual desktop has20 slots
+PASS actual black desktop canvas
+PASS native rows preference4
+PASS native theme preferenceblack
+PASS native labels/borders unchecked
+PASS native close/restart checkbox checked
+PASS About always contains actual version
+PASS restricted row renamed precisely
+PASS volume restoration is directly below restricted-access action
+PASS opening settings/update preserves existing explicit choices
+PASS exactly four TV Access buttons
+PASS TV Access button order 0
+PASS TV Access button order 1
+PASS TV Access button order 2
+PASS TV Access button order 3
+PASS opening/reordering helper does not connect or run a grant
+PASS two power commands plus Cancel; no Sleep or Accessibility row
+PASS power off and restart are separate commands
+PASS service initially not granted
+PASS grey command has inline own-settings hint 0
+PASS grey command has inline own-settings hint 1
+PASS grey power click neither opens Accessibility nor grants it
+PASS removed package retains restore option
+PASS physical deletion remains offered after profile uninstall
+PASS VM public system power dialog opens
+PASS exact power off/restart choices recognized in actual system UI (no activation)
+Checks=34; no firmware mutation or actual shutdown/reboot tested
+INSTRUMENTATION_CODE: -1

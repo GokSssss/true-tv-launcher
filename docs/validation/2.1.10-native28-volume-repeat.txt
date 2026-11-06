@@ -1,0 +1,9 @@
+INSTRUMENTATION_RESULT: passed=false
+INSTRUMENTATION_RESULT: report=Verified same-device ADB uid=2000
+PASS detached own-APK helper running through actual ADB
+PASS helper survives ADB connection closure
+java.lang.AssertionError: no balanced synthetic repeat: VOLUME_PROBE SYNTHETIC_DOWN=0 SYNTHETIC_UP=0
+	at ru.truetv.launcher.VolumeHelperCheck.onStart(VolumeHelperCheck.java:13)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2145)
+
+INSTRUMENTATION_CODE: 0

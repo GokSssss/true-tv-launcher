@@ -1,0 +1,11 @@
+INSTRUMENTATION_RESULT: passed=false
+INSTRUMENTATION_RESULT: report=PASS disposable SDK34 VM only
+PASS receiver fixture is disabled before explicit enable
+PASS real connected-device foreground receiver starts
+FAIL phone instrumentation waits for ordinary exported share target
+java.lang.AssertionError: phone instrumentation waits for ordinary exported share target
+	at ru.truetv.launcher.BridgeNativeCheck.check(BridgeNativeCheck.java:24)
+	at ru.truetv.launcher.BridgeNativeCheck.onStart(BridgeNativeCheck.java:38)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2402)
+
+INSTRUMENTATION_CODE: 0

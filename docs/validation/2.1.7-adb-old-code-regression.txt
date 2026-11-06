@@ -1,0 +1,3 @@
+Exception in thread "main" java.io.IOException: Unexpected ADB channel
+	at ru.truetv.launcher.AdbWire.shell(AdbWire.java:19)
+	at ru.truetv.launcher.ExpertContractCheck.main(ExpertContractCheck.java:27)

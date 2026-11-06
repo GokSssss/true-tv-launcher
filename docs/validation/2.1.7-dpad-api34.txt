@@ -1,0 +1,10 @@
+Own disposable Android API34 VM: actual Dpad events only for product UI; no performClick.
+start-focus [["Bluetooth", "[353,46][413,98]"]]
+desktop-focus [["True TV Control Probe", "[24,104][264,276]"]]
+desktop-focus [["Add app", "[24,284][264,456]"]]
+catalog-focus [["android.widget.GridView", "[24,163][1256,648]"]]
+after-pick-focus [["True TV Control Probe", "[24,284][264,456]"]]
+PASS-selected-exact-tile "True TV Control Probe"
+PASS-repeat-and-double-Home "tile preserved and no chooser"
+PASS-force-stop-restart "saved tile preserved"
+resolver "priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=true\nru.truetv.launcher/.HomeActivity"

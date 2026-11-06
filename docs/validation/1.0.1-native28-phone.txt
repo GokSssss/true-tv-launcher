@@ -1,0 +1,31 @@
+INSTRUMENTATION_RESULT: passed=true
+INSTRUMENTATION_RESULT: report=PASS await condition
+PASS await condition
+PASS await condition
+PASS phone progress visible during transfer
+PASS await condition
+PASS phone completes real URI transfer 0: Files sent: 1
+PASS await condition
+PASS phone popup shows final result
+PASS received bytes equal source 0
+PASS await condition
+PASS await condition
+PASS await condition
+PASS phone progress visible during transfer
+PASS await condition
+PASS phone completes real URI transfer 1: Files sent: 1
+PASS await condition
+PASS phone popup shows final result
+PASS received bytes equal source 1
+PASS await condition
+PASS await condition
+PASS await condition
+PASS phone progress visible during transfer
+PASS await condition
+PASS phone completes real URI transfer 2: Files sent: 1
+PASS await condition
+PASS phone popup shows final result
+PASS received bytes equal source 2
+PASS accessibility unchanged
+Checks=28
+INSTRUMENTATION_CODE: -1

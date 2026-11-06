@@ -1,0 +1,21 @@
+INSTRUMENTATION_RESULT: report=PASS Android saved RSA identity reopened without CRT cast
+PASS Android restored key signs for existing public identity
+ERROR java.net.ConnectException: failed to connect to /127.0.0.1 (port 5555) from /127.0.0.1 (port 41668) after 5000ms: isConnected failed: ECONNREFUSED (Connection refused)
+	at libcore.io.IoBridge.isConnected(IoBridge.java:278)
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:187)
+	at libcore.io.IoBridge.connect(IoBridge.java:129)
+	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:137)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:230)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+	at java.net.Socket.connect(Socket.java:621)
+	at ru.truetv.launcher.AdbWire.<init>(AdbWire.java:17)
+	at ru.truetv.launcher.ExpertBackend.<init>(ExpertBackend.java:16)
+	at ru.truetv.launcher.LayoutCheck.onStart(LayoutCheck.java:22)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2145)
+Caused by: android.system.ErrnoException: isConnected failed: ECONNREFUSED (Connection refused)
+	at libcore.io.IoBridge.isConnected(IoBridge.java:267)
+	... 12 more
+
+INSTRUMENTATION_CODE: 0

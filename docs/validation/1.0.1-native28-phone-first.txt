@@ -1,0 +1,14 @@
+INSTRUMENTATION_RESULT: passed=false
+INSTRUMENTATION_RESULT: report=PASS await condition
+PASS await condition
+PASS await condition
+PASS phone progress visible during transfer
+PASS await condition
+PASS phone completes real URI transfer 0: Files sent: 1
+FAIL phone popup shows final result
+java.lang.AssertionError: phone popup shows final result
+	at ru.truetv.launcher.PhoneSessionCheck.check(PhoneSessionCheck.java:6)
+	at ru.truetv.launcher.PhoneSessionCheck.onStart(PhoneSessionCheck.java:10)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2145)
+Checks=7
+INSTRUMENTATION_CODE: 0

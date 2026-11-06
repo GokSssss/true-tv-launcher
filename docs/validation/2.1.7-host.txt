@@ -1,0 +1,8 @@
+PASS 84 domain assertions
+PASS 35 expert command/RSA/ADB framing/late-close isolation/root-runner checks
+PASS 18008 desktop geometry and persisted RSA checks (180 grid configurations)
+IR diagnostic host checks: 127 PASS (no hardware/root claim)
+PASS 41 report export checks: collision preservation, UTF8, scoped commit/rollback
+PASS 62 filesystem/MIME/expert path checks
+PASS 32 integrated restricted-settings command checks (fake runner, no device grant claim)
+PASS 34 explicit Accessibility activation / Home default checks

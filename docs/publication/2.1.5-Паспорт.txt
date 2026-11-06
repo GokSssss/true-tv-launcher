@@ -1,0 +1,41 @@
+True TV Launcher2.1.5/code215 — Сортировка файлов
+04.11.2026, проект22.1, ru.truetv.launcher, minSDK21/target34.
+Проект: https://drive.google.com/drive/folders/1HSemiU8S2f8ZPpVLLfJyvjLCbD7PATmn
+Выпуск: https://drive.google.com/drive/folders/1O5BxfKZiYhh64xa2E5fgsMYoFDmm3vr1
+Чек-лист: https://drive.google.com/file/d/1AXNmttz6pCgJEzbkJv8ldSGxswA6EnT8/view
+Предыдущий полный2.1.4: https://drive.google.com/drive/folders/1D2W8IzbfEYQfTgbqIX2eFeUnNOkaruXw
+
+В крайней правой колонке действий добавлена Сортировка с собственным значком и подписью текущего порядка. По умолчанию — от новых к старым по дате изменения, вместе файлы и папки. Дополнительно — от старых к новым, по имени А–Я/Я–А. Один native radio-выбор, курсор на текущем, Отмена без изменения. Выбор сохраняется после перезапуска, выделение по documentID сохраняется после изменения порядка; фокус возвращается в колонку действий. Равные даты разбираются по имени; дата создания не используется, поскольку доступна не во всех файловых системах Android/USB. Сортировка не меняет файлы или их даты.
+Дерево слева остаётся алфавитным. Назад — отдельная первая строка при наличии родителя, вне сортировки/выделения/счётчика. Колонки дерево20% → файлы63% → действия17%, пульт и остальные договорённости сохранены. Сортировка применяется и к результатам поиска/пикеру; provider возвращает те же точные documentID/URI.
+
+Установка
+Открыть APK поверх2.1.4; постоянная подпись сохраняет данные/настройки. Войти в Файлы; Сортировка — в правой колонке. При первом открытии новые элементы сверху. Для ручной проверки использовать тестовые копии и приложенный чек-лист. Версия видна в настройках О лаунчере.
+Wi-Fi остаётся видимым отложенным пунктом. Нет новой сети/сервера/ассистента, новых root/ADB/A11y/ИК возможностей. Физический телевизор/USB/root factoryAPK в этом выпуске не проверялись.
+
+Сборка и восстановление
+Собственный Java/native Android код. ECJ/D8/aapt2/apksig с закреплёнными инструментами и SHA256, Java21; Gradle не запускался. python3 tools/bootstrap.py, python3 tools/build.py. Постоянный ключ и пароль .signing предоставляются отдельно; в SOURCE отсутствуют. tools/source.py создаёт один ZIP с SOURCE_INPUTS.sha256, без APK/DEX/classes/кэшей/ключей. Поздние ссылки/итоги чтения дополняют живой паспорт; опубликованные APK/SOURCE не переписываются.
+APK 336525байт SHA256:dd514e6b786e7bf403025ac167052d65bb037523db57f0c499dcb148ec7f6bff
+Сертификат SHA256:a5a632bd6a8b8e2c3e3623ee245c3a5c3652c0c6b32751a35a49d6a9c2e8fa33
+
+Проверки215: сборка ECJ/D8/aapt2/apksig прошла,331собственных runtime-классов, v1/v2 с прежним сертификатом. Host62filesystem/MIME/path (включая10проверок FileOrder),84domain/35expert/18008geometry-RSA/127IR/41report PASS. Нативный FileVisualCheck на отдельном Android9/API28 —69PASS:7значков,3колонки/разделители,создание папки/TXT,ru/en/de,поиск,4реальных режима сортировки,одна radio-отметка/курсор,Отмена,выделение поID,Back вне порядка и сохранение после Activity restart.2снимка просмотрены. Первая попытка Visual читала прежний список, потому что первое имя совпадало до/после нового mtime: тест исправлен ожиданием публикации новой коллекции, затем69PASS на том же APK. Не выдавать failed-attempt за PASS; отчёты сохранены.
+Сортировка:https://drive.google.com/file/d/1tFffU9_0dlEDn3O8ZqvPyg8hD88QwCwA/view
+Файлы:https://drive.google.com/file/d/18oLkupOaMIb4uPBWedlS45lMT_MsiwM1/view
+Чек-лист:https://drive.google.com/file/d/1AXNmttz6pCgJEzbkJv8ldSGxswA6EnT8/view
+
+Финал нативных проверок215:91FileNativeCheck+69FileVisualCheck=160PASS на одноразовом Android9/API28, на точном выпускном APK. Внешний UID без storage-доступа, DocumentsUI отключён: реальные GET/OPEN/TREE/CREATE, UTF8/seek/read/write, множественный выбор, сохранение grant после перезапуска клиента, tree confinement и read-only VIEW. Навигация и новый default первого документа,пункты About и Wi-Fi-заглушки пройдены. Первая Native-попытка читала focus до обработки отложенного post: добавлено ожидание idle/ожидаемого имени первого документа вместо старой константы nested. Исправлены только тесты, повтор91PASS на неизменном APK. Failed-attempt отчёты сохранены. Итоговая смена порядка, выделение и Back проверены отдельно; физические OEM/USB/root factoryAPK не тестировались, полномочия не расширены.
+
+Выпуск215: https://drive.google.com/drive/folders/1O5BxfKZiYhh64xa2E5fgsMYoFDmm3vr1
+APK: https://drive.google.com/file/d/1GYcaSdJ6GD1Ek3VhBmoiP4gm5ENETX-c/view
+Чек-лист: https://drive.google.com/file/d/1AXNmttz6pCgJEzbkJv8ldSGxswA6EnT8/view
+Сортировка: https://drive.google.com/file/d/1tFffU9_0dlEDn3O8ZqvPyg8hD88QwCwA/view
+Экран: https://drive.google.com/file/d/18oLkupOaMIb4uPBWedlS45lMT_MsiwM1/view
+Предыдущий214: https://drive.google.com/drive/folders/1D2W8IzbfEYQfTgbqIX2eFeUnNOkaruXw
+Проект: https://drive.google.com/drive/folders/1HSemiU8S2f8ZPpVLLfJyvjLCbD7PATmn
+
+Итог публикации215
+SOURCE:https://drive.google.com/file/d/10LVyEFlhEYd1XsSme8Ec8ag2NNm5Deo3/view
+SOURCE11081598байт SHA25649c10b3852c95d1a265b8d1745eb20be658a6758d9e60de4f5fe5f81e5a40795. Распакованный SOURCE_INPUTS.sha256 проверен целиком; чистая сборка с отдельно предоставленными инструментами/ключом дала побайтово тот же APK. APK и SOURCE215 скачаны обратно с Drive: точные байты/SHA256 совпали, ZIP CRC корректен. Чек-лист/2снимка и предыдущие APK/паспорт214 сверены точным чтением; прежний SOURCE214 сравнен с сохранённым сырым Drive-download, текущая metadata неизменна. Два повторных materialize214 упали с transport closed, не объявлены новым успешным чтением; SOURCE215 успешно прочитан целиком. После проверки215/214 удаляется неключевой213; история/нужные фото сохраняются. Одноразовый эмулятор остановлен, writable images удалены; DocumentsUI тест восстановил, системные настройки не переопределялись. Опубликованные APK/SOURCE не переписываются; поздние ссылки/итоги внесены в живой паспорт и журналы.
+
+04.11.2026 — новое свидетельство владельца
+Владелец повторно установил2.1.5: добавление приложения на стол НЕ работает. Это теперь известный сбой на физическом устройстве, а не просто отсутствие проверки. Сохраняется только для сравнения до216, не предлагать как стабильную рабочую версию.
+APK/SOURCE этого выпуска неизменны. Это обновление статуса, не новый бинарник.

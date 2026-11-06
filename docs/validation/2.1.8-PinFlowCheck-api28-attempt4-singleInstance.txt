@@ -1,0 +1,255 @@
+INSTRUMENTATION_RESULT: passed=false
+INSTRUMENTATION_RESULT: report=PASS disposable VM guard
+PASS settings present in preceding task history
+PASS own default verified before real Home key
+FAIL Home returns from settings as the existing Activity: focus=false, resumed=false, destroyed=false
+Activity state at failure: ACTIVITY MANAGER ACTIVITIES (dumpsys activity activities)
+Display #0 (activities from top to bottom):
+
+  Stack #0: type=home mode=fullscreen
+  isSleeping=false
+  mBounds=Rect(0, 0 - 0, 0)
+    Task id #14
+    mBounds=Rect(0, 0 - 0, 0)
+    mMinWidth=-1
+    mMinHeight=-1
+    mLastNonFullscreenBounds=null
+    * TaskRecord{a98345c #14 A=ru.truetv.launcher U=0 StackId=0 sz=1}
+      userId=0 effectiveUid=u0a67 mCallingUid=1000 mUserSetupComplete=true mCallingPackage=android
+      affinity=ru.truetv.launcher
+      intent={act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=ru.truetv.launcher/.HomeActivity}
+      realActivity=ru.truetv.launcher/.HomeActivity
+      autoRemoveRecents=false isPersistable=true numFullscreen=1 activityType=2
+      rootWasReset=true mNeverRelinquishIdentity=true mReuseTask=false mLockTaskAuth=LOCK_TASK_AUTH_PINNABLE
+      Activities=[ActivityRecord{a00bc6e u0 ru.truetv.launcher/.HomeActivity t14}]
+      askedCompatMode=false inRecents=true isAvailable=true
+      mRootProcess=ProcessRecord{dea8365 3618:ru.truetv.launcher/u0a67}
+      stackId=0
+      hasBeenVisible=true mResizeMode=RESIZE_MODE_UNRESIZEABLE mSupportsPictureInPicture=false isResizeable=false lastActiveTime=784033 (inactive for 26s)
+      * Hist #0: ActivityRecord{a00bc6e u0 ru.truetv.launcher/.HomeActivity t14}
+          packageName=ru.truetv.launcher processName=ru.truetv.launcher
+          launchedFromUid=1000 launchedFromPackage=android userId=0
+          app=ProcessRecord{dea8365 3618:ru.truetv.launcher/u0a67}
+          Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=ru.truetv.launcher/.HomeActivity (has extras) }
+          frontOfTask=true task=TaskRecord{a98345c #14 A=ru.truetv.launcher U=0 StackId=0 sz=1}
+          taskAffinity=ru.truetv.launcher
+          realActivity=ru.truetv.launcher/.HomeActivity
+          baseDir=/data/app/ru.truetv.launcher-ov7-XkD7WvwHmObd61N_Yw==/base.apk
+          dataDir=/data/user/0/ru.truetv.launcher
+          stateNotNeeded=false componentSpecified=false mActivityType=home
+          compat={160dpi always-compat} labelRes=0x7f020000 icon=0x7f010001 theme=0x7f030000
+          mLastReportedConfigurations:
+           mGlobalConfig={1.0 310mcc260mnc [en_US] ldltr sw720dp w1280dp h696dp 160dpi xlrg long land finger qwerty/v/v tball/v winConfig={ mBounds=Rect(0, 0 - 0, 0) mAppBounds=Rect(0, 0 - 1280, 720) mWindowingMode=fullscreen mActivityType=undefined} s.5}
+           mOverrideConfig={1.0 310mcc260mnc [en_US] ldltr sw720dp w1280dp h696dp 160dpi xlrg long land finger qwerty/v/v tball/v winConfig={ mBounds=Rect(0, 0 - 1280, 720) mAppBounds=Rect(0, 0 - 1280, 720) mWindowingMode=fullscreen mActivityType=home} s.5}
+          CurrentConfiguration={1.0 310mcc260mnc [en_US] ldltr sw720dp w1280dp h696dp 160dpi xlrg long land finger qwerty/v/v tball/v winConfig={ mBounds=Rect(0, 0 - 1280, 720) mAppBounds=Rect(0, 0 - 1280, 720) mWindowingMode=fullscreen mActivityType=home} s.5}
+          OverrideConfiguration={0.0 ?mcc?mnc ?localeList ?layoutDir ?swdp ?wdp ?hdp ?density ?lsize ?long ?ldr ?wideColorGamut ?orien ?uimode ?night ?touch ?keyb/?/? ?nav/? winConfig={ mBounds=Rect(0, 0 - 0, 0) mAppBounds=null mWindowingMode=undefined mActivityType=home}}
+          taskDescription: label="null" icon=null iconResource=0 iconFilename=null primaryColor=ff212121
+           backgroundColor=ff10151c
+           statusBarColor=ff000000
+           navigationBarColor=ff000000
+          launchFailed=false launchCount=1 lastLaunchTime=-27s26ms
+          haveState=false icicle=null
+          state=RESUMED stopped=false delayedResume=false finishing=false
+          keysPaused=false inHistory=true visible=true sleeping=false idle=true mStartingWindowState=STARTING_WINDOW_SHOWN
+          fullscreen=true noDisplay=false immersive=false launchMode=3
+          frozenBeforeDestroy=false forceNewConfig=false
+          mActivityType=home
+          waitingVisible=false nowVisible=true lastVisibleTime=-25s542ms
+          resizeMode=RESIZE_MODE_UNRESIZEABLE
+          mLastReportedMultiWindowMode=false mLastReportedPictureInPictureMode=false
+    Task id #5
+    mBounds=Rect(0, 0 - 0, 0)
+    mMinWidth=-1
+    mMinHeight=-1
+    mLastNonFullscreenBounds=null
+    * TaskRecord{95fbbee #5 I=com.android.launcher3/.Launcher U=0 StackId=0 sz=1}
+      userId=0 effectiveUid=u0a29 mCallingUid=0 mUserSetupComplete=true mCallingPackage=null
+      intent={act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.android.launcher3/.Launcher}
+      realActivity=com.android.launcher3/.Launcher
+      autoRemoveRecents=false isPersistable=true numFullscreen=1 activityType=2
+      rootWasReset=false mNeverRelinquishIdentity=true mReuseTask=false mLockTaskAuth=LOCK_TASK_AUTH_PINNABLE
+      Activities=[ActivityRecord{b85f56d u0 com.android.launcher3/.Launcher t5}]
+      askedCompatMode=false inRecents=true isAvailable=true
+      mRootProcess=ProcessRecord{119b88f 2450:com.android.launcher3/u0a29}
+      stackId=0
+      hasBeenVisible=true mResizeMode=RESIZE_MODE_RESIZEABLE mSupportsPictureInPicture=false isResizeable=true lastActiveTime=774459 (inactive for 36s)
+      * Hist #0: ActivityRecord{b85f56d u0 com.android.launcher3/.Launcher t5}
+          packageName=com.android.launcher3 processName=com.android.launcher3
+          launchedFromUid=0 launchedFromPackage=null userId=0
+          app=ProcessRecord{119b88f 2450:com.android.launcher3/u0a29}
+          Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.android.launcher3/.Launcher }
+          frontOfTask=true task=TaskRecord{95fbbee #5 I=com.android.launcher3/.Launcher U=0 StackId=0 sz=1}
+          taskAffinity=null
+          realActivity=com.android.launcher3/.Launcher
+          baseDir=/system/priv-app/Launcher3QuickStep/Launcher3QuickStep.apk
+          dataDir=/data/user/0/com.android.launcher3
+          stateNotNeeded=true componentSpecified=false mActivityType=home
+          compat={160dpi always-compat} labelRes=0x7f110035 icon=0x7f08001b theme=0x7f120002
+          mLastReportedConfigurations:
+           mGlobalConfig={1.0 310mcc260mnc [en_US] ldltr sw720dp w1280dp h696dp 160dpi xlrg long land finger qwerty/v/v tball/v winConfig={ mBounds=Rect(0, 0 - 0, 0) mAppBounds=Rect(0, 0 - 1280, 720) mWindowingMode=fullscreen mActivityType=undefined} s.5}
+           mOverrideConfig={1.0 310mcc260mnc [en_US] ldltr sw720dp w1280dp h696dp 160dpi xlrg long land finger qwerty/v/v tball/v winConfig={ mBounds=Rect(0, 0 - 1280, 720) mAppBounds=Rect(0, 0 - 1280, 720) mWindowingMode=fullscreen mActivityType=home} s.5}
+          CurrentConfiguration={1.0 310mcc260mnc [en_US] ldltr sw720dp w1280dp h696dp 160dpi xlrg long land finger qwerty/v/v tball/v winConfig={ mBounds=Rect(0, 0 - 1280, 720) mAppBounds=Rect(0, 0 - 1280, 720) mWindowingMode=fullscreen mActivityType=home} s.5}
+          OverrideConfiguration={0.0 ?mcc?mnc ?localeList ?layoutDir ?swdp ?wdp ?hdp ?density ?lsize ?long ?ldr ?wideColorGamut ?orien ?uimode ?night ?touch ?keyb/?/? ?nav/? winConfig={ mBounds=Rect(0, 0 - 0, 0) mAppBounds=null mWindowingMode=undefined mActivityType=home}}
+          taskDescription: label="null" icon=null iconResource=0 iconFilename=null primaryColor=fff5f5f5
+           backgroundColor=fffafafa
+           statusBarColor=0
+           navigationBarColor=0
+          launchFailed=false launchCount=0 lastLaunchTime=-10m46s671ms
+          haveState=true icicle=Bundle[mParcelledData.dataSize=3452]
+          state=STOPPED stopped=true delayedResume=false finishing=false
+          keysPaused=false inHistory=true visible=false sleeping=false idle=true mStartingWindowState=STARTING_WINDOW_REMOVED
+          fullscreen=true noDisplay=false immersive=false launchMode=2
+          frozenBeforeDestroy=false forceNewConfig=false
+          mActivityType=home
+          waitingVisible=false nowVisible=false lastVisibleTime=-3m26s536ms
+          resizeMode=RESIZE_MODE_RESIZEABLE
+          mLastReportedMultiWindowMode=false mLastReportedPictureInPictureMode=false
+
+    Running activities (most recent first):
+      TaskRecord{a98345c #14 A=ru.truetv.launcher U=0 StackId=0 sz=1}
+        Run #1: ActivityRecord{a00bc6e u0 ru.truetv.launcher/.HomeActivity t14}
+      TaskRecord{95fbbee #5 I=com.android.launcher3/.Launcher U=0 StackId=0 sz=1}
+        Run #0: ActivityRecord{b85f56d u0 com.android.launcher3/.Launcher t5}
+
+    mResumedActivity: ActivityRecord{a00bc6e u0 ru.truetv.launcher/.HomeActivity t14}
+
+  Stack #5: type=standard mode=fullscreen
+  isSleeping=false
+  mBounds=Rect(0, 0 - 0, 0)
+
+    Task id #13
+    mBounds=Rect(0, 0 - 0, 0)
+    mMinWidth=-1
+    mMinHeight=-1
+    mLastNonFullscreenBounds=null
+    * TaskRecord{600e83a #13 A=ru.truetv.launcher U=0 StackId=5 sz=1}
+      userId=0 effectiveUid=u0a67 mCallingUid=u0a67 mUserSetupComplete=true mCallingPackage=ru.truetv.launcher
+      affinity=ru.truetv.launcher
+      intent={flg=0x10000000 cmp=ru.truetv.launcher/.SettingsActivity}
+      realActivity=ru.truetv.launcher/.SettingsActivity
+      autoRemoveRecents=false isPersistable=true numFullscreen=1 activityType=1
+      rootWasReset=false mNeverRelinquishIdentity=true mReuseTask=false mLockTaskAuth=LOCK_TASK_AUTH_PINNABLE
+      Activities=[ActivityRecord{d74f75b u0 ru.truetv.launcher/.SettingsActivity t13}]
+      askedCompatMode=false inRecents=true isAvailable=true
+      mRootProcess=ProcessRecord{dea8365 3618:ru.truetv.launcher/u0a67}
+      stackId=5
+      hasBeenVisible=true mResizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION mSupportsPictureInPicture=false isResizeable=true lastActiveTime=783754 (inactive for 27s)
+      * Hist #0: ActivityRecord{d74f75b u0 ru.truetv.launcher/.SettingsActivity t13}
+          packageName=ru.truetv.launcher processName=ru.truetv.launcher
+          launchedFromUid=10067 launchedFromPackage=ru.truetv.launcher userId=0
+          app=ProcessRecord{dea8365 3618:ru.truetv.launcher/u0a67}
+          Intent { flg=0x10000000 cmp=ru.truetv.launcher/.SettingsActivity }
+          frontOfTask=true task=TaskRecord{600e83a #13 A=ru.truetv.launcher U=0 StackId=5 sz=1}
+          taskAffinity=ru.truetv.launcher
+          realActivity=ru.truetv.launcher/.SettingsActivity
+          baseDir=/data/app/ru.truetv.launcher-ov7-XkD7WvwHmObd61N_Yw==/base.apk
+          dataDir=/data/user/0/ru.truetv.launcher
+          stateNotNeeded=false componentSpecified=true mActivityType=standard
+          compat={160dpi always-compat} labelRes=0x7f020000 icon=0x7f010001 theme=0x7f030000
+          mLastReportedConfigurations:
+           mGlobalConfig={1.0 310mcc260mnc [en_US] ldltr sw720dp w1280dp h696dp 160dpi xlrg long land finger qwerty/v/v tball/v winConfig={ mBounds=Rect(0, 0 - 0, 0) mAppBounds=Rect(0, 0 - 1280, 720) mWindowingMode=fullscreen mActivityType=undefined} s.5}
+           mOverrideConfig={1.0 310mcc260mnc [en_US] ldltr sw720dp w1280dp h696dp 160dpi xlrg long land finger qwerty/v/v tball/v winConfig={ mBounds=Rect(0, 0 - 1280, 720) mAppBounds=Rect(0, 0 - 1280, 720) mWindowingMode=fullscreen mActivityType=standard} s.5}
+          CurrentConfiguration={1.0 310mcc260mnc [en_US] ldltr sw720dp w1280dp h696dp 160dpi xlrg long land finger qwerty/v/v tball/v winConfig={ mBounds=Rect(0, 0 - 1280, 720) mAppBounds=Rect(0, 0 - 1280, 720) mWindowingMode=fullscreen mActivityType=standard} s.5}
+          taskDescription: label="null" icon=null iconResource=0 iconFilename=null primaryColor=ff212121
+           backgroundColor=ff10151c
+           statusBarColor=ff000000
+           navigationBarColor=ff000000
+          launchFailed=false launchCount=0 lastLaunchTime=-31s819ms
+          haveState=true icicle=Bundle[mParcelledData.dataSize=3432]
+          state=STOPPED stopped=true delayedResume=false finishing=false
+          keysPaused=false inHistory=true visible=false sleeping=false idle=true mStartingWindowState=STARTING_WINDOW_SHOWN
+          fullscreen=true noDisplay=false immersive=false launchMode=0
+          frozenBeforeDestroy=false forceNewConfig=false
+          mActivityType=standard
+          waitingVisible=false nowVisible=false lastVisibleTime=-30s211ms
+          resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION
+          mLastReportedMultiWindowMode=false mLastReportedPictureInPictureMode=false
+
+    Running activities (most recent first):
+      TaskRecord{600e83a #13 A=ru.truetv.launcher U=0 StackId=5 sz=1}
+        Run #0: ActivityRecord{d74f75b u0 ru.truetv.launcher/.SettingsActivity t13}
+
+    mLastPausedActivity: ActivityRecord{d74f75b u0 ru.truetv.launcher/.SettingsActivity t13}
+
+  Stack #4: type=standard mode=fullscreen
+  isSleeping=false
+  mBounds=Rect(0, 0 - 0, 0)
+
+    Task id #12
+    mBounds=Rect(0, 0 - 0, 0)
+    mMinWidth=-1
+    mMinHeight=-1
+    mLastNonFullscreenBounds=null
+    * TaskRecord{c00bceb #12 A=ru.truetv.launcher U=0 StackId=4 sz=1}
+      userId=0 effectiveUid=u0a67 mCallingUid=u0a67 mUserSetupComplete=true mCallingPackage=ru.truetv.launcher
+      affinity=ru.truetv.launcher
+      intent={flg=0x10000000 cmp=ru.truetv.launcher/.HomeActivity}
+      realActivity=ru.truetv.launcher/.HomeActivity
+      autoRemoveRecents=false isPersistable=true numFullscreen=1 activityType=1
+      rootWasReset=false mNeverRelinquishIdentity=true mReuseTask=false mLockTaskAuth=LOCK_TASK_AUTH_PINNABLE
+      Activities=[ActivityRecord{52af44e u0 ru.truetv.launcher/.HomeActivity t12}]
+      askedCompatMode=false inRecents=false isAvailable=true
+      stackId=4
+      hasBeenVisible=true mResizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION mSupportsPictureInPicture=false isResizeable=true lastActiveTime=778984 (inactive for 31s)
+      * Hist #0: ActivityRecord{52af44e u0 ru.truetv.launcher/.HomeActivity t12}
+          packageName=ru.truetv.launcher processName=ru.truetv.launcher
+          launchedFromUid=10067 launchedFromPackage=ru.truetv.launcher userId=0
+          app=ProcessRecord{dea8365 3618:ru.truetv.launcher/u0a67}
+          Intent { flg=0x10000000 cmp=ru.truetv.launcher/.HomeActivity }
+          frontOfTask=true task=TaskRecord{c00bceb #12 A=ru.truetv.launcher U=0 StackId=4 sz=1}
+          taskAffinity=ru.truetv.launcher
+          realActivity=ru.truetv.launcher/.HomeActivity
+          baseDir=/data/app/ru.truetv.launcher-ov7-XkD7WvwHmObd61N_Yw==/base.apk
+          dataDir=/data/user/0/ru.truetv.launcher
+          stateNotNeeded=false componentSpecified=true mActivityType=standard
+          compat={160dpi always-compat} labelRes=0x7f020000 icon=0x7f010001 theme=0x7f030000
+          mLastReportedConfigurations:
+           mGlobalConfig={1.0 310mcc260mnc [en_US] ldltr sw720dp w1280dp h696dp 160dpi xlrg long land finger qwerty/v/v tball/v winConfig={ mBounds=Rect(0, 0 - 0, 0) mAppBounds=Rect(0, 0 - 1280, 720) mWindowingMode=fullscreen mActivityType=undefined} s.5}
+           mOverrideConfig={1.0 310mcc260mnc [en_US] ldltr sw720dp w1280dp h696dp 160dpi xlrg long land finger qwerty/v/v tball/v winConfig={ mBounds=Rect(0, 0 - 1280, 720) mAppBounds=Rect(0, 0 - 1280, 720) mWindowingMode=fullscreen mActivityType=standard} s.5}
+          CurrentConfiguration={1.0 310mcc260mnc [en_US] ldltr sw720dp w1280dp h696dp 160dpi xlrg long land finger qwerty/v/v tball/v winConfig={ mBounds=Rect(0, 0 - 1280, 720) mAppBounds=Rect(0, 0 - 1280, 720) mWindowingMode=fullscreen mActivityType=standard} s.5}
+          taskDescription: label="null" icon=null iconResource=0 iconFilename=null primaryColor=ff212121
+           backgroundColor=ff10151c
+           statusBarColor=ff000000
+           navigationBarColor=ff000000
+          launchFailed=false launchCount=0 lastLaunchTime=-36s335ms
+          haveState=true icicle=Bundle[mParcelledData.dataSize=1928]
+          state=STOPPED stopped=true delayedResume=false finishing=false
+          keysPaused=false inHistory=true visible=false sleeping=false idle=true mStartingWindowState=STARTING_WINDOW_REMOVED
+          fullscreen=true noDisplay=false immersive=false launchMode=3
+          frozenBeforeDestroy=false forceNewConfig=false
+          mActivityType=standard
+          waitingVisible=false nowVisible=false lastVisibleTime=-32s623ms
+          resizeMode=RESIZE_MODE_UNRESIZEABLE
+          mLastReportedMultiWindowMode=false mLastReportedPictureInPictureMode=false
+
+    Running activities (most recent first):
+      TaskRecord{c00bceb #12 A=ru.truetv.launcher U=0 StackId=4 sz=1}
+        Run #0: ActivityRecord{52af44e u0 ru.truetv.launcher/.HomeActivity t12}
+
+    mLastPausedActivity: ActivityRecord{52af44e u0 ru.truetv.launcher/.HomeActivity t12}
+
+  ResumedActivity: ActivityRecord{a00bc6e u0 ru.truetv.launcher/.HomeActivity t14}
+  mFocusedStack=ActivityStack{8eccf25 stackId=0 type=home mode=fullscreen visible=true translucent=false, 2 tasks} mLastFocusedStack=ActivityStack{8eccf25 stackId=0 type=home mode=fullscreen visible=true translucent=false, 2 tasks}
+  mCurTaskIdForUser={0=14}
+  mUserStackInFront={}
+  displayId=0 stacks=3
+   mHomeStack=ActivityStack{8eccf25 stackId=0 type=home mode=fullscreen visible=true translucent=false, 2 tasks}
+  isHomeRecentsComponent=false  KeyguardController:
+    mKeyguardShowing=false
+    mAodShowing=false
+    mKeyguardGoingAway=false
+    mOccluded=false
+    mDismissingKeyguardActivity=null
+    mDismissalRequested=false
+    mVisibilityTransactionDepth=0
+  LockTaskController
+    mLockTaskModeState=NONE
+    mLockTaskModeTasks=
+    mLockTaskPackages (userId:packages)=
+      u0:[]
+java.lang.AssertionError: Home returns from settings as the existing Activity: focus=false, resumed=false, destroyed=false
+	at ru.truetv.launcher.PinFlowCheck.check(PinFlowCheck.java:13)
+	at ru.truetv.launcher.PinFlowCheck.onStart(PinFlowCheck.java:21)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2145)
+
+INSTRUMENTATION_CODE: 0

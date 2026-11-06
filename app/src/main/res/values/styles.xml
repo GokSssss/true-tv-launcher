@@ -1,0 +1,9 @@
+<resources>
+ <style name="AppTheme" parent="android:style/Theme.Material.NoActionBar">
+  <item name="android:fontFamily">sans</item><item name="android:forceDarkAllowed">false</item><item name="android:colorAccent">#B6D6DC</item><item name="android:windowBackground">#10151C</item><item name="android:colorBackground">#10151C</item><item name="android:windowNoTitle">true</item><item name="android:windowFullscreen">false</item><item name="android:windowActionModeOverlay">true</item><item name="android:windowLightStatusBar">false</item>
+ </style>
+ <style name="LightTheme" parent="android:style/Theme.Material.Light.NoActionBar"><item name="android:windowLightStatusBar">true</item><item name="android:windowLightNavigationBar">true</item>
+  <item name="android:fontFamily">sans</item><item name="android:forceDarkAllowed">false</item><item name="android:colorAccent">#315D70</item><item name="android:windowBackground">#F3F4F6</item><item name="android:colorBackground">#F3F4F6</item><item name="android:windowNoTitle">true</item><item name="android:windowFullscreen">false</item><item name="android:windowActionModeOverlay">true</item>
+ </style>
+ <style name="BlackTheme" parent="AppTheme"><item name="android:windowBackground">#000000</item><item name="android:colorBackground">#000000</item></style>
+</resources>

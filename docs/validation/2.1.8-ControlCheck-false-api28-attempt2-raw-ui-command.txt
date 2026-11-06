@@ -1,0 +1,3 @@
+INSTRUMENTATION_RESULT: passed=false
+INSTRUMENTATION_RESULT: report=FAIL java.lang.IllegalArgumentException: Invalid service component
+INSTRUMENTATION_CODE: 0

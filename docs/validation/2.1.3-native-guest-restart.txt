@@ -1,0 +1,7 @@
+Error type 2
+android.util.AndroidException: Can't connect to activity manager; is the system running?
+	at com.android.commands.am.Am.onRun(Am.java:68)
+	at com.android.internal.os.BaseCommand.run(BaseCommand.java:54)
+	at com.android.commands.am.Am.main(Am.java:50)
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:340)

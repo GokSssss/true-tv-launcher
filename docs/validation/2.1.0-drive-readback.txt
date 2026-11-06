@@ -1,0 +1,7 @@
+PASS Drive readback 1X6byUcm5bF3h6Z31f3jRtOC7Dr5MumDJ 320141 SHA256 32bede958c0c2e48fc5daba9bda466c8b15fb9d4a8d609586eca94d22e98daa7
+PASS Drive readback 1FQEy-oddVjSEZv_aCqOX4zr21KeDB_Cc 234125 SHA256 2f5f0ee7a4737307bb2f62e3d0467878ed80ce48d3c693aadd945e89f88ab59d
+PASS Drive readback 15iHLqzt3w0UOe4-Wrfi0IiVcw72CxbtU 379383 SHA256 f1d997e913840bf9583d9d71f5a5da0fd57225da96e3e0d753e7c303c93f1e29
+PASS Drive readback 1ZzXDP7x7QthA93zZhyiHjPKkW82hBgu- 5939 SHA256 7729c303d79a58147dda38858a42c526f9b6dde3fa4526237da4a11ac513c845
+PASS Drive readback 1VDJ5Uq82h_1a9l02MVJ78zIqG7WNwgdB 61704 SHA256 417f8158d727d3fa80c11bec942378440d470d601db11044043236954674c3bc
+PASS SOURCE Drive readback 8747236 SHA256 f9d73004ebe518acf2abb5dbc3f2b235d98d4c8dfdacb4ded3c25ab41de3582a; all ZIP CRC valid
+PASS 10 live documents/passport exact bytes and parents; obsolete non-key2.0.5 release/SOURCE removed after verified2.1.0+2.0.6; emulator stopped/own writable images cleaned

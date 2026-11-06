@@ -1,0 +1,61 @@
+--------- beginning of crash
+11-04 22:48:51.476  1573  1573 E AndroidRuntime: FATAL EXCEPTION: main
+11-04 22:48:51.476  1573  1573 E AndroidRuntime: Process: com.android.inputmethod.latin, PID: 1573
+11-04 22:48:51.476  1573  1573 E AndroidRuntime: DeadSystemException: The system died; earlier logs will point to the root cause
+11-04 22:48:51.858   987  1045 E AndroidRuntime: FATAL EXCEPTION: pool-2-thread-1
+11-04 22:48:51.858   987  1045 E AndroidRuntime: Process: com.android.systemui, PID: 987
+11-04 22:48:51.858   987  1045 E AndroidRuntime: DeadSystemException: The system died; earlier logs will point to the root cause
+11-04 22:48:51.807  1604  1604 E AndroidRuntime: FATAL EXCEPTION: main
+11-04 22:48:51.807  1604  1604 E AndroidRuntime: Process: android.ext.services, PID: 1604
+11-04 22:48:51.807  1604  1604 E AndroidRuntime: DeadSystemException: The system died; earlier logs will point to the root cause
+11-04 22:48:51.932   987  1048 E AndroidRuntime: FATAL EXCEPTION: BroadcastRunning
+11-04 22:48:51.932   987  1048 E AndroidRuntime: Process: com.android.systemui, PID: 987
+11-04 22:48:51.932   987  1048 E AndroidRuntime: DeadSystemException: The system died; earlier logs will point to the root cause
+11-04 22:48:52.053  1483  1483 E AndroidRuntime: FATAL EXCEPTION: main
+11-04 22:48:52.053  1483  1483 E AndroidRuntime: Process: com.android.phone, PID: 1483
+11-04 22:48:52.053  1483  1483 E AndroidRuntime: DeadSystemException: The system died; earlier logs will point to the root cause
+11-04 22:51:03.576  2123  2301 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 2301 (bt_stack_manage), pid 2123 (droid.bluetooth)
+11-04 22:51:28.832  1791  1925 E AndroidRuntime: *** FATAL EXCEPTION IN SYSTEM PROCESS: WifiHandlerThread
+11-04 22:51:28.832  1791  1925 E AndroidRuntime: java.lang.IllegalStateException: Could not fetch IpMemoryStore
+11-04 22:51:28.832  1791  1925 E AndroidRuntime: 	at com.android.wifi.x.android.net.networkstack.NetworkStackClientBase.lambda$fetchIpMemoryStore$3(NetworkStackClientBase.java:104)
+11-04 22:51:28.832  1791  1925 E AndroidRuntime: 	at com.android.wifi.x.android.net.networkstack.NetworkStackClientBase.$r8$lambda$TX31HzBFLijInNVafW7lJydlBq4(NetworkStackClientBase.java:0)
+11-04 22:51:28.832  1791  1925 E AndroidRuntime: 	at com.android.wifi.x.android.net.networkstack.NetworkStackClientBase$$ExternalSyntheticLambda0.accept(R8$$SyntheticClass:0)
+11-04 22:51:28.832  1791  1925 E AndroidRuntime: 	at com.android.wifi.x.android.net.networkstack.NetworkStackClientBase.requestConnector(NetworkStackClientBase.java:119)
+11-04 22:51:28.832  1791  1925 E AndroidRuntime: 	at com.android.wifi.x.android.net.networkstack.NetworkStackClientBase.fetchIpMemoryStore(NetworkStackClientBase.java:100)
+11-04 22:51:28.832  1791  1925 E AndroidRuntime: 	at com.android.wifi.x.android.net.IpMemoryStore.<init>(IpMemoryStore.java:45)
+11-04 22:51:28.832  1791  1925 E AndroidRuntime: 	at com.android.wifi.x.android.net.IpMemoryStore.getMemoryStore(IpMemoryStore.java:96)
+11-04 22:51:28.832  1791  1925 E AndroidRuntime: 	at com.android.server.wifi.WifiInjector.getIpMemoryStore(WifiInjector.java:1033)
+11-04 22:51:28.832  1791  1925 E AndroidRuntime: 	at com.android.server.wifi.MemoryStoreImpl.start(MemoryStoreImpl.java:171)
+11-04 22:51:28.832  1791  1925 E AndroidRuntime: 	at com.android.server.wifi.WifiServiceImpl.lambda$handleBootCompleted$2(WifiServiceImpl.java:824)
+11-04 22:51:28.832  1791  1925 E AndroidRuntime: 	at com.android.server.wifi.WifiServiceImpl.$r8$lambda$Kq7jVCsTKN7GDRsKys_boJK43fg(WifiServiceImpl.java:0)
+11-04 22:51:28.832  1791  1925 E AndroidRuntime: 	at com.android.server.wifi.WifiServiceImpl$$ExternalSyntheticLambda10.run(R8$$SyntheticClass:0)
+11-04 22:51:28.832  1791  1925 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:958)
+11-04 22:51:28.832  1791  1925 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-04 22:51:28.832  1791  1925 E AndroidRuntime: 	at com.android.server.wifi.RunnerHandler.dispatchMessage(RunnerHandler.java:122)
+11-04 22:51:28.832  1791  1925 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:205)
+11-04 22:51:28.832  1791  1925 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:294)
+11-04 22:51:28.832  1791  1925 E AndroidRuntime: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-04 22:51:28.832  1791  1925 E AndroidRuntime: Caused by: android.os.DeadObjectException
+11-04 22:51:28.832  1791  1925 E AndroidRuntime: 	at android.os.BinderProxy.transactNative(Native Method)
+11-04 22:51:28.832  1791  1925 E AndroidRuntime: 	at android.os.BinderProxy.transact(BinderProxy.java:584)
+11-04 22:51:28.832  1791  1925 E AndroidRuntime: 	at com.android.wifi.x.android.net.INetworkStackConnector$Stub$Proxy.fetchIpMemoryStore(INetworkStackConnector.java:229)
+11-04 22:51:28.832  1791  1925 E AndroidRuntime: 	at com.android.wifi.x.android.net.networkstack.NetworkStackClientBase.lambda$fetchIpMemoryStore$3(NetworkStackClientBase.java:102)
+11-04 22:51:28.832  1791  1925 E AndroidRuntime: 	... 17 more
+11-04 22:51:32.694  2468  2468 E AndroidRuntime: FATAL EXCEPTION: main
+11-04 22:51:32.694  2468  2468 E AndroidRuntime: Process: com.android.cellbroadcastreceiver, PID: 2468
+11-04 22:51:32.694  2468  2468 E AndroidRuntime: DeadSystemException: The system died; earlier logs will point to the root cause
+11-04 22:51:32.735  2445  2445 E AndroidRuntime: FATAL EXCEPTION: main
+11-04 22:51:32.735  2445  2445 E AndroidRuntime: Process: com.android.inputmethod.latin, PID: 2445
+11-04 22:51:32.735  2445  2445 E AndroidRuntime: DeadSystemException: The system died; earlier logs will point to the root cause
+11-04 22:51:32.923  2004  2089 E AndroidRuntime: FATAL EXCEPTION: BroadcastRunning
+11-04 22:51:32.923  2004  2089 E AndroidRuntime: Process: com.android.systemui, PID: 2004
+11-04 22:51:32.923  2004  2089 E AndroidRuntime: DeadSystemException: The system died; earlier logs will point to the root cause
+11-04 22:51:33.031  2004  2004 E AndroidRuntime: FATAL EXCEPTION: main
+11-04 22:51:33.031  2004  2004 E AndroidRuntime: Process: com.android.systemui, PID: 2004
+11-04 22:51:33.031  2004  2004 E AndroidRuntime: DeadSystemException: The system died; earlier logs will point to the root cause
+11-04 22:51:33.178  2424  2424 E AndroidRuntime: FATAL EXCEPTION: main
+11-04 22:51:33.178  2424  2424 E AndroidRuntime: Process: com.android.launcher3, PID: 2424
+11-04 22:51:33.178  2424  2424 E AndroidRuntime: DeadSystemException: The system died; earlier logs will point to the root cause
+11-04 22:51:33.253  2189  2189 E AndroidRuntime: FATAL EXCEPTION: main
+11-04 22:51:33.253  2189  2189 E AndroidRuntime: Process: com.android.phone, PID: 2189
+11-04 22:51:33.253  2189  2189 E AndroidRuntime: DeadSystemException: The system died; earlier logs will point to the root cause

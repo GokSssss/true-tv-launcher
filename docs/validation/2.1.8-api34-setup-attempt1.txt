@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/tmp/truetv218-native.py", line 17, in <module>
+    run('shell','settings','put','global','system_server_watchdog_timeout_ms','300000');run('shell','svc','bluetooth','disable');run('tcpip','5555');time.sleep(1)
+                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/truetv218-native.py", line 5, in run
+    if p.returncode:raise RuntimeError('ADB command failed '+str(args[:2]))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: ADB command failed ('shell', 'svc')

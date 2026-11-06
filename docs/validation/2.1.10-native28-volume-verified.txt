@@ -1,0 +1,9 @@
+INSTRUMENTATION_RESULT: passed=true
+INSTRUMENTATION_RESULT: report=Verified same-device ADB uid=2000
+PASS detached own-APK helper running through actual ADB
+PASS helper survives ADB connection closure
+PASS raw VM volume DOWN/UP produced balanced synthetic repeats; none after release
+PASS explicit stop releases own helper lock
+PASS stopped helper adds no repeats on another raw hold
+No physical remote/audio/CEC behavior claim.
+INSTRUMENTATION_CODE: -1

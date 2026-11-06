@@ -1,0 +1,94 @@
+INSTRUMENTATION_RESULT: passed=true
+INSTRUMENTATION_RESULT: report=PASS guard: disposable emulator only
+PASS own test directory created
+PASS system DocumentsUI disabled only on disposable VM
+PASS implicit android.intent.action.OPEN_DOCUMENT resolves without DocumentsUI
+PASS picker loaded fixture list
+PASS external client returned result
+PASS external client actually read URI: null
+PASS OPEN_DOCUMENT persists permission
+PASS real seekable file descriptor
+PASS external UTF8 bytes correct
+PASS OpenableColumns display name
+PASS external client returned result
+PASS external client actually read URI: null
+PASS saved grant survives client force-stop/restart
+PASS implicit android.intent.action.GET_CONTENT resolves without DocumentsUI
+PASS picker loaded fixture list
+PASS external client returned result
+PASS external client actually read URI: null
+PASS GET_CONTENT remains temporary
+PASS generic binary request accepts ROM
+PASS implicit android.intent.action.OPEN_DOCUMENT resolves without DocumentsUI
+PASS picker loaded fixture list
+PASS external client returned result
+PASS external client actually read URI: null
+PASS multiple selection returns ClipData with two readable files
+PASS implicit android.intent.action.OPEN_DOCUMENT_TREE resolves without DocumentsUI
+PASS picker loaded fixture list
+PASS external client returned result
+PASS external client actually read URI: null
+PASS TREE URI enumerates real children
+PASS tree grant cannot read sibling document
+PASS implicit android.intent.action.CREATE_DOCUMENT resolves without DocumentsUI
+PASS picker loaded fixture list
+PASS external client returned result
+PASS external client actually read URI: null
+PASS CREATE_DOCUMENT writes through external client
+PASS created content stored in target folder
+PASS document URI identity survives rename
+PASS picker loaded fixture list
+PASS folder tree left and files right
+PASS no file actions under list
+PASS current folder title above list
+PASS permanent vertical folder actions on right with Sort
+PASS Add folder is in persistent column
+PASS Add TXT is in persistent column
+PASS file row has only open area and passive selection mark
+PASS no empty checkbox on unselected row
+PASS file Left reaches tree
+PASS tree Right returns to files
+PASS file Right reaches folder actions on right
+PASS actions Left returns to file list
+PASS rightmost actions Right reaches header
+PASS Menu Down restores file row
+PASS Back is a separate first row above real files
+PASS Up from first file reaches Back row
+PASS Down from Back reaches first real file: expected=created.txt actual=created.txt
+PASS long OK opens real context menu for nested
+PASS folder context excludes both sharing actions
+PASS no folder/TXT creation in long press
+PASS selected folder displays checkmark
+PASS long OK opens real context menu for renamed.txt
+PASS single copy action includes exact filename and destination workflow
+PASS file context offers normal share and deferred Wi-Fi
+PASS popup selection keeps focus on last selected file
+PASS long OK opens real context menu for game.nes
+PASS next popup selection follows new selected file
+PASS long OK opens real context menu for renamed.txt
+PASS files-only group uses plural action wording
+PASS long OK opens real context menu for nested
+PASS long OK opens real context menu for renamed.txt
+PASS mixed group has explicit files-and-folders wording
+PASS mixed group cannot be shared as files
+PASS large selection counter uses N/total beside folder title
+PASS Back clears selection without leaving current folder
+PASS device-storage root collapses on OK
+PASS storage root has no Back row
+PASS device-storage root expands again on OK
+PASS Back row opens actual parent folder
+PASS empty folder retains only Back row
+PASS Select all includes files/folders beyond visible rows
+PASS Back navigation row is excluded from selection and totals
+PASS long list reaches right folder actions in one Right
+PASS return to long list preserves scroll position
+PASS long OK opens real context menu for renamed.txt
+PASS external client returned result
+PASS external client actually read URI: null
+PASS open-with association grants read but not write
+PASS short OK cannot start override
+PASS three-second continuous hold starts exactly once
+PASS About row always displays actual version
+PASS Wi-Fi is only a deferred placeholder
+Checks=91
+INSTRUMENTATION_CODE: -1

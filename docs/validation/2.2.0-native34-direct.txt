@@ -1,0 +1,41 @@
+INSTRUMENTATION_RESULT: passed=false
+INSTRUMENTATION_RESULT: report=PASS disposable SDK34 VM only
+PASS receiver fixture is disabled before explicit enable
+PASS real connected-device foreground receiver starts
+PASS unknown peer requires a decision, mode0
+PASS decision applied to actual TLS payload, mode0
+PASS receiver returns to idle without a foreground-window leak
+PASS Downloads collision preserves existing files, total0
+PASS unknown peer requires a decision, mode5
+PASS decision applied to actual TLS payload, mode5
+PASS receiver returns to idle without a foreground-window leak
+PASS Downloads collision preserves existing files, total1
+PASS background acceptance hides transfer window
+PASS unknown peer requires a decision, mode2
+PASS decision applied to actual TLS payload, mode2
+PASS receiver returns to idle without a foreground-window leak
+PASS Downloads collision preserves existing files, total2
+PASS always foreground trust saved by key
+PASS trusted peer is automatically accepted, mode1
+PASS decision applied to actual TLS payload, mode1
+PASS receiver returns to idle without a foreground-window leak
+PASS Downloads collision preserves existing files, total3
+PASS unknown peer requires a decision, mode3
+PASS decision applied to actual TLS payload, mode3
+PASS receiver returns to idle without a foreground-window leak
+PASS Downloads collision preserves existing files, total4
+PASS always background trust saved by key
+PASS background acceptance hides transfer window
+PASS trusted peer is automatically accepted, mode2
+PASS decision applied to actual TLS payload, mode1
+PASS receiver returns to idle without a foreground-window leak
+PASS Downloads collision preserves existing files, total5
+PASS idle receiver releases transfer-only CPU wake lock
+FAIL scoped file stays pending with internal name before checksum
+RECEIVER STATUS Files received: 1 · Downloads
+java.lang.AssertionError: scoped file stays pending with internal name before checksum
+	at ru.truetv.launcher.BridgeNativeCheck.check(BridgeNativeCheck.java:24)
+	at ru.truetv.launcher.BridgeNativeCheck.onStart(BridgeNativeCheck.java:43)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2402)
+
+INSTRUMENTATION_CODE: 0

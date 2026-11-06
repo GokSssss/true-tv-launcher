@@ -1,0 +1,13 @@
+INSTRUMENTATION_RESULT: passed=false
+INSTRUMENTATION_RESULT: report=PASS disposable VM guard SDK34
+PASS real app ADB connection and same-device proof
+PASS real Android13+ restricted-settings app-op confirmed
+PASS fixture service enabled before selection
+PASS own concrete service selectable in UI
+PASS selection and opening confirmation do not enable service
+java.lang.AssertionError: No own enable confirmation
+	at ru.truetv.launcher.RuntimeSetupCheck.clickConfirm(RuntimeSetupCheck.java:24)
+	at ru.truetv.launcher.RuntimeSetupCheck.onStart(RuntimeSetupCheck.java:33)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2402)
+
+INSTRUMENTATION_CODE: 0

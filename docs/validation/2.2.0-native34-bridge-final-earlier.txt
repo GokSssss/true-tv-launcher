@@ -1,0 +1,12 @@
+INSTRUMENTATION_RESULT: passed=false
+INSTRUMENTATION_RESULT: report=PASS disposable SDK34 VM only
+VM repair: cleared receiver flag left by interrupted prior test
+PASS receiver fixture is disabled before explicit enable
+PASS real connected-device foreground receiver starts
+PASS phone instrumentation waits for ordinary exported share target
+java.lang.AssertionError: No receive request
+	at ru.truetv.launcher.BridgeNativeCheck.request(BridgeNativeCheck.java:29)
+	at ru.truetv.launcher.BridgeNativeCheck.onStart(BridgeNativeCheck.java:38)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2402)
+
+INSTRUMENTATION_CODE: 0

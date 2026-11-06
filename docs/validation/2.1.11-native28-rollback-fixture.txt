@@ -1,0 +1,39 @@
+INSTRUMENTATION_RESULT: passed=false
+INSTRUMENTATION_RESULT: report=PASS disposable VM guard SDK28
+PASS real app ADB connection and same-device proof
+PASS stock Home fixture resolved on this Android version
+PASS fixture service enabled before selection
+PASS own concrete service selectable in UI
+PASS actual Dpad Up from service list selects first EnableADB button, cycle0
+PASS Right reaches second connection button
+PASS Down from connection returns to service list
+PASS actual Dpad Up from service list selects first EnableADB button, cycle1
+PASS Right reaches second connection button
+PASS Down from connection returns to service list
+PASS actual Dpad Up from service list selects first EnableADB button, cycle2
+PASS Right reaches second connection button
+PASS Down from connection returns to service list
+PASS remote focus movement never connects or grants
+PASS selection and opening confirmation do not enable service
+PASS explicit service-enable confirmation clicked
+PASS UI activation confirmed by Android AccessibilityManager
+PASS pre-existing fixture service preserved
+PASS activation result primary action is OK, not hidden OEM Accessibility menu
+PASS actual launcher AccessibilityService connected
+PASS real deactivation removes only selected service and preserves fixture
+PASS last test service can be disabled through product command
+PASS different Home fixture assigned before mutation
+PASS actual app ADB permanently assigns own Home
+PASS quick double Home preserves confirmed default
+PASS explicit handoff actually freezes selected stock Home over ADB (priority report simulated)
+PASS real Android resolves True TV after verified stock freeze
+PASS unconfirmed own Home triggers explicit rollback result
+PASS actual stock Home enabled setting restored exactly after failed switch
+FAIL actual previous Home resolves again after rollback
+java.lang.AssertionError: actual previous Home resolves again after rollback
+	at ru.truetv.launcher.RuntimeSetupCheck.check(RuntimeSetupCheck.java:17)
+	at ru.truetv.launcher.RuntimeSetupCheck.freezeChecks(RuntimeSetupCheck.java:36)
+	at ru.truetv.launcher.RuntimeSetupCheck.onStart(RuntimeSetupCheck.java:50)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2145)
+
+INSTRUMENTATION_CODE: 0

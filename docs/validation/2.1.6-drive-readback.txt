@@ -1,0 +1,20 @@
+PASS 1YxagN_2zodn_5wKYD-1g5V9nnnv4Xibe exact bytes SHA256 d2e7adc53483a2eeb6cc34024250cdffab74131ed3ce8878bbe350b6cc405013
+PASS 1GYcaSdJ6GD1Ek3VhBmoiP4gm5ENETX-c exact bytes SHA256 dd514e6b786e7bf403025ac167052d65bb037523db57f0c499dcb148ec7f6bff
+PASS 1YwKGwQu3vS0NOPHtjZiPmx-BvhdXHY7K exact bytes SHA256 42274cb3659279a4b84b37bd87c70e01d952a15a77e25482b50906b3a8eda185
+PASS 1dg1cBfKsxok97gFmSM0GFYuj0Cj_Ltzo exact bytes SHA256 046a8aab9fc256cee821493120bf15477abb15a87d3a2c99714ba83828858316
+PASS 1_I2o9yJFlbfyTqkT2XrAU4RSLuZ4uAe5 exact bytes SHA256 799df2449457f604250d35a796421789deb185cd18ecc8e44325610deb95b683
+PASS 1d3YiIpdzOgg-LWbfveRchQIltENKfGSl exact bytes SHA256 b457fe13b9fd26b22c02d0ec9525e1e430d137bacf4a9790b2c5c32cd6a05cf7
+PASS 1uGxPGb_iK9jWwiqf7n8yOywF3iojc_-r exact bytes SHA256 80df84af7ff5698062aa7a6a35c1bfd5afa7057dba3ba909a84581157d19967a
+PASS previous215 SOURCE existing raw Drive download exact SHA256 49c10b3852c95d1a265b8d1745eb20be658a6758d9e60de4f5fe5f81e5a40795 ZIP CRC
+PASS current216 SOURCE exact Drive bytes SHA256 f50e82c0f6e7031aa9644291bd9aaa7a9f3dbdbe0633576a9dd65b4de987534b ZIP CRC
+PASS live exact bytes 22.1База! verified parent
+PASS live exact bytes Журнал улучшений True TV Launcher.txt verified parent
+PASS live exact bytes 30_DEVELOPMENT_LOG_RU.txt verified parent
+PASS live exact bytes README.md verified parent
+PASS live exact bytes AGENTS.md verified parent
+PASS live exact bytes docs/PROVENANCE.md verified parent
+PASS live exact bytes modules/file-manager/Требования файлового менеджера.txt verified parent
+PASS live exact bytes modules/file-manager/История разработки файлового менеджера.txt verified parent
+PASS live exact bytes modules/file-manager/Журнал улучшений Файловый менеджер.txt verified parent
+PASS live exact bytes docs/publication/2.1.6-Паспорт.txt verified parent
+PASS older unkeyed214 release/APK/SOURCE/passport removed after216/215 verification; final local artifacts216/215; SDK/keys/project24/owner photos unchanged.

@@ -1,0 +1,20 @@
+INSTRUMENTATION_RESULT: report=PASS private report path starts empty and is not used
+PASS expert settings contain IR entry
+PASS opening screen never starts root
+PASS draft survives activity launch
+PASS report labels unapplied draft
+PASS unsupported apply is explained
+PASS receiver button takes remote focus
+PASS Dpad moves to codes button
+PASS learned code requires explicit confirmation
+PASS confirmed code saved only in app preferences
+PASS report provides copy and TXT export plus Cancel
+PASS report exported without SAF picker; status=Report saved to Downloads:
+/storage/emulated/0/Download/IR-diagnostic-20261103-183624-587.txt
+PASS report saved in public Downloads
+PASS no fallback report in private app folder
+PASS export contains draft and its actual status
+PASS single code can be removed
+PASS IR activity not exported
+Checks=17; no root/hardware claim
+INSTRUMENTATION_CODE: -1

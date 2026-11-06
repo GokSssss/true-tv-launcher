@@ -1,0 +1,33 @@
+INSTRUMENTATION_RESULT: passed=false
+INSTRUMENTATION_RESULT: report=PASS disposable VM guard
+PASS settings present in preceding task history
+PASS Home returns from settings as the existing Activity
+java.lang.AssertionError: java.lang.IllegalStateException: Can not perform this action after onSaveInstanceState
+	at ru.truetv.launcher.PinFlowCheck.main(PinFlowCheck.java:14)
+	at ru.truetv.launcher.PinFlowCheck.onStart(PinFlowCheck.java:22)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2145)
+Caused by: java.lang.IllegalStateException: Can not perform this action after onSaveInstanceState
+	at android.app.FragmentManagerImpl.checkStateLoss(FragmentManager.java:1877)
+	at android.app.FragmentManagerImpl.enqueueAction(FragmentManager.java:1900)
+	at android.app.BackStackRecord.commitInternal(BackStackRecord.java:688)
+	at android.app.BackStackRecord.commit(BackStackRecord.java:646)
+	at android.app.DialogFragment.show(DialogFragment.java:235)
+	at ru.truetv.launcher.AppPicker.open(AppPicker.java:14)
+	at ru.truetv.launcher.HomeActivity.openCatalog(HomeActivity.java:37)
+	at ru.truetv.launcher.HomeActivity.lambda$11$ru-truetv-launcher-HomeActivity(HomeActivity.java:30)
+	at ru.truetv.launcher.HomeActivity$$ExternalSyntheticLambda9.onClick(D8$$SyntheticClass:0)
+	at android.view.View.performClick(View.java:6597)
+	at ru.truetv.launcher.PinFlowCheck.lambda$3$ru-truetv-launcher-PinFlowCheck(PinFlowCheck.java:22)
+	at ru.truetv.launcher.PinFlowCheck$$ExternalSyntheticLambda1.run(D8$$SyntheticClass:0)
+	at ru.truetv.launcher.PinFlowCheck.lambda$0(PinFlowCheck.java:14)
+	at ru.truetv.launcher.PinFlowCheck$$ExternalSyntheticLambda9.run(D8$$SyntheticClass:0)
+	at android.app.Instrumentation$SyncRunnable.run(Instrumentation.java:2163)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+INSTRUMENTATION_CODE: 0

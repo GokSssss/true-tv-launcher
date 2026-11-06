@@ -1,0 +1,66 @@
+INSTRUMENTATION_RESULT: passed=false
+INSTRUMENTATION_RESULT: report=PASS guard: disposable emulator only
+PASS own test directory created
+PASS system DocumentsUI disabled only on disposable VM
+PASS implicit android.intent.action.OPEN_DOCUMENT resolves without DocumentsUI
+PASS picker loaded fixture list
+PASS external client returned result
+PASS external client actually read URI: null
+PASS OPEN_DOCUMENT persists permission
+PASS real seekable file descriptor
+PASS external UTF8 bytes correct
+PASS OpenableColumns display name
+PASS external client returned result
+PASS external client actually read URI: null
+PASS saved grant survives client force-stop/restart
+PASS implicit android.intent.action.GET_CONTENT resolves without DocumentsUI
+PASS picker loaded fixture list
+PASS external client returned result
+PASS external client actually read URI: null
+PASS GET_CONTENT remains temporary
+PASS generic binary request accepts ROM
+PASS implicit android.intent.action.OPEN_DOCUMENT resolves without DocumentsUI
+PASS picker loaded fixture list
+PASS external client returned result
+PASS external client actually read URI: null
+PASS multiple selection returns ClipData with two readable files
+PASS implicit android.intent.action.OPEN_DOCUMENT_TREE resolves without DocumentsUI
+PASS picker loaded fixture list
+PASS external client returned result
+PASS external client actually read URI: null
+PASS TREE URI enumerates real children
+PASS tree grant cannot read sibling document
+PASS implicit android.intent.action.CREATE_DOCUMENT resolves without DocumentsUI
+PASS picker loaded fixture list
+PASS external client returned result
+PASS external client actually read URI: null
+PASS CREATE_DOCUMENT writes through external client
+PASS created content stored in target folder
+PASS document URI identity survives rename
+PASS picker loaded fixture list
+PASS folder tree left and files right
+PASS no file actions under list
+PASS current folder title above list
+PASS permanent vertical folder actions between tree and list
+PASS Add folder is in persistent column
+PASS Add TXT is in persistent column
+PASS file row has only open area and passive selection mark
+PASS no empty checkbox on unselected row
+ERROR java.lang.SecurityException: Injecting to another application requires INJECT_EVENTS permission
+	at android.os.Parcel.createException(Parcel.java:1942)
+	at android.os.Parcel.readException(Parcel.java:1910)
+	at android.os.Parcel.readException(Parcel.java:1860)
+	at android.hardware.input.IInputManager$Stub$Proxy.injectInputEvent(IInputManager.java:575)
+	at android.hardware.input.InputManager.injectInputEvent(InputManager.java:880)
+	at android.app.Instrumentation.sendKeySync(Instrumentation.java:1038)
+	at android.app.Instrumentation.sendKeyDownUpSync(Instrumentation.java:1048)
+	at ru.truetv.launcher.FileNativeCheck.onStart(FileNativeCheck.java:51)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2145)
+Caused by: android.os.RemoteException: Remote stack trace:
+	at com.android.server.input.InputManagerService.injectInputEventInternal(InputManagerService.java:621)
+	at com.android.server.input.InputManagerService.injectInputEvent(InputManagerService.java:595)
+	at android.hardware.input.IInputManager$Stub.onTransact(IInputManager.java:143)
+	at android.os.Binder.execTransact(Binder.java:731)
+
+
+INSTRUMENTATION_CODE: 0

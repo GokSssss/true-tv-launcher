@@ -1,0 +1,2 @@
+API34 first boot and warm reboot suffered system_server/NetworkStack/Bluetooth failures before APK installation. Environment restart terminated QEMU. No218 native app check completed here. Runtime globals were not re-read/restored after abrupt stop; disposable writable images removed, discarding all VM-only watchdog/Bluetooth/WiFi settings: userdata-qemu.img, userdata-qemu.img.qcow2, cache.img, cache.img.qcow2, encryptionkey.img.qcow2
+SDK/config and original encryptionkey.img retained. No owner device accessed.
